@@ -1,4 +1,4 @@
-It's a spice client for openstack instance (spice supported), based on virt-verwer
+It's a spice client for openstack instance (openstack need support), based on virt-verwer
 
 virt-viewer address https://github.com/SPICE/virt-viewer
 
