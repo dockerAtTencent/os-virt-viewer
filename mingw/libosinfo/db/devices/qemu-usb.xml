@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <device id="http://www.linux-usb.org/usb.ids/80ee/0021">
+    <name>tablet</name>
+    <bus-type>usb</bus-type>
+    <class>input</class>
+    <vendor>VirtualBox</vendor>
+    <vendor xml:lang="pl">VirtualBox</vendor>
+    <vendor xml:lang="uk">VirtualBox</vendor>
+    <vendor-id>80ee</vendor-id>
+    <product>Tablet</product>
+    <product-id>0021</product-id>
+  </device>
+
+</libosinfo>

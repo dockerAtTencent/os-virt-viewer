@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://debian.org/debian/1.0">
+    <short-id>debian1.0</short-id>
+    <short-id>debianbuzz</short-id>
+    <name>Debian Buzz</name>
+    <name xml:lang="pl">Debian Buzz</name>
+    <name xml:lang="uk">Debian Buzz</name>
+    <version>1.1</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+  </os>
+
+  <os id="http://debian.org/debian/1.2">
+    <short-id>debian1.2</short-id>
+    <short-id>debianrex</short-id>
+    <name>Debian Rex</name>
+    <name xml:lang="pl">Debian Rex</name>
+    <name xml:lang="uk">Debian Rex</name>
+    <version>1.2</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/1.0"/>
+    <derives-from id="http://debian.org/debian/1.0"/>
+  </os>
+
+  <os id="http://debian.org/debian/1.3">
+    <short-id>debian1.3</short-id>
+    <short-id>debianbo</short-id>
+    <name>Debian Bo</name>
+    <name xml:lang="pl">Debian Bo</name>
+    <name xml:lang="uk">Debian Bo</name>
+    <version>1.3</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/1.2"/>
+    <derives-from id="http://debian.org/debian/1.2"/>
+  </os>
+
+  <os id="http://debian.org/debian/2.0">
+    <short-id>debian2.0</short-id>
+    <short-id>debianhamm</short-id>
+    <name>Debian Hamm</name>
+    <name xml:lang="pl">Debian Hamm</name>
+    <name xml:lang="uk">Debian Hamm</name>
+    <version>2.0</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/1.3"/>
+    <derives-from id="http://debian.org/debian/1.3"/>
+  </os>
+
+  <os id="http://debian.org/debian/2.1">
+    <short-id>debian2.1</short-id>
+    <short-id>debianslink</short-id>
+    <name>Debian Slink</name>
+    <version>2.1</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/2.0"/>
+    <derives-from id="http://debian.org/debian/2.0"/>
+  </os>
+
+  <os id="http://debian.org/debian/2.2">
+    <short-id>debian2.2</short-id>
+    <short-id>debianpotato</short-id>
+    <name>Debian Potato</name>
+    <name xml:lang="pl">Debian Potato</name>
+    <name xml:lang="uk">Debian Potato</name>
+    <version>2.2</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/2.1"/>
+    <derives-from id="http://debian.org/debian/2.1"/>
+  </os>
+
+  <os id="http://debian.org/debian/3">
+    <short-id>debian3</short-id>
+    <short-id>debianwoody</short-id>
+    <name>Debian Woody</name>
+    <name xml:lang="pl">Debian Woody</name>
+    <name xml:lang="uk">Debian Woody</name>
+    <version>3</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/2.2"/>
+    <derives-from id="http://debian.org/debian/2.2"/>
+  </os>
+
+
+  <os id="http://debian.org/debian/3.1">
+    <short-id>debian3.1</short-id>
+    <short-id>debiansarge</short-id>
+    <name>Debian Sarge</name>
+    <name xml:lang="pl">Debian Sarge</name>
+    <name xml:lang="uk">Debian Sarge</name>
+    <version>3.1</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/3"/>
+    <derives-from id="http://debian.org/debian/3"/>
+  </os>
+
+  <os id="http://debian.org/debian/4">
+    <short-id>debian4</short-id>
+    <short-id>debianetch</short-id>
+    <name>Debian Etch</name>
+    <name xml:lang="pl">Debian Etch</name>
+    <name xml:lang="uk">Debian Etch</name>
+    <version>4</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/3.1"/>
+    <derives-from id="http://debian.org/debian/3.1"/>
+  </os>
+
+  <os id="http://debian.org/debian/5">
+    <short-id>debian5</short-id>
+    <short-id>debianlenny</short-id>
+    <name>Debian Lenny</name>
+    <name xml:lang="pl">Debian Lenny</name>
+    <name xml:lang="uk">Debian Lenny</name>
+    <version>5</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/4"/>
+    <derives-from id="http://debian.org/debian/4"/>
+
+    <devices>
+      <device id="http://pciids.sourceforge.net/v2.2/pci.ids/1af4/1000"/>
+      <device id="http://pciids.sourceforge.net/v2.2/pci.ids/1af4/1001"/>
+    </devices>
+
+    <resources arch="all">
+      <minimum>
+        <cpu>1000000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>134217728</ram>
+        <storage>5368709120</storage>
+      </minimum>
+      <recommended>
+        <cpu>1000000000</cpu>
+        <ram>536870912</ram>
+        <storage>5368709120</storage>
+      </recommended>
+    </resources>
+  </os>
+
+  <os id="http://debian.org/debian/6">
+    <short-id>debian6</short-id>
+    <short-id>debiansqueeze</short-id>
+    <name>Debian Squeeze</name>
+    <name xml:lang="pl">Debian Squeeze</name>
+    <name xml:lang="uk">Debian Squeeze</name>
+    <version>6</version>
+    <vendor>Debian Project</vendor>
+    <vendor xml:lang="pl">Projekt Debian</vendor>
+    <vendor xml:lang="uk">Проект Debian</vendor>
+    <family>linux</family>
+    <distro>debian</distro>
+    <upgrades id="http://debian.org/debian/5"/>
+    <derives-from id="http://debian.org/debian/5"/>
+
+    <devices>
+      <device id="http://www.linux-usb.org/usb.ids/80ee/0021"/>
+    </devices>
+
+    <resources arch="all">
+      <minimum>
+        <cpu>1000000000</cpu>
+        <n-cpus>1</n-cpus>
+        <ram>134217728</ram>
+        <storage>5368709120</storage>
+      </minimum>
+      <recommended>
+        <cpu>1000000000</cpu>
+        <ram>536870912</ram>
+        <storage>5368709120</storage>
+      </recommended>
+    </resources>
+
+    <media arch="i386">
+      <url>http://cdimage.debian.org/debian-cd/6.0.6/i386/iso-dvd/debian-6.0.6-i386-DVD-1.iso</url>
+      <iso>
+        <volume-id>Debian 6.0.\d i386 1</volume-id>
+      </iso>
+      <kernel>install.386/vmlinuz</kernel>
+      <initrd>install.386/initrd.gz</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://cdimage.debian.org/debian-cd/6.0.6/amd64/iso-dvd/debian-6.0.6-amd64-DVD-1.iso</url>
+      <iso>
+        <volume-id>Debian 6.0.\d amd64 1</volume-id>
+      </iso>
+      <kernel>install.amd/vmlinuz</kernel>
+      <initrd>install.amd/initrd.gz</initrd>
+    </media>
+
+    <media live="true" arch="i386">
+      <url>http://live.debian.net/cdimage/release/current/i386/iso-hybrid/debian-live-6.0.6-i386-gnome-desktop.iso</url>
+      <iso>
+        <volume-id>Debian squeeze.*</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>install/vmlinuz</kernel>
+      <initrd>install/initrd.gz</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://live.debian.net/cdimage/release/current/amd64/iso-hybrid/debian-live-6.0.6-amd64-gnome-desktop.iso</url>
+      <iso>
+        <volume-id>Debian squeeze.*</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>install/vmlinuz</kernel>
+      <initrd>install/initrd.gz</initrd>
+    </media>
+  </os>
+
+
+
+</libosinfo>

@@ -1,0 +1,618 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Automatically generated, 2010
+# triplepointfive <iya777@yandex.ru>, 2012
+# Yulia <ypoyarko@redhat.com>, 2010, 2012
+# Yulia <yulia.poyarkova@redhat.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: virt-viewer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-09 21:09+0100\n"
+"PO-Revision-Date: 2013-04-29 17:06+0000\n"
+"Last-Translator: Daniel Berrange <dan-transifex@berrange.com>\n"
+"Language-Team: Russian <trans-ru@lists.fedoraproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: ../data/remote-viewer.desktop.in.h:1 ../src/remote-viewer-main.c:147
+msgid "Remote Viewer"
+msgstr "Удаленный просмотр"
+
+#: ../data/remote-viewer.desktop.in.h:2
+msgid "Access remote desktops"
+msgstr "Доступ к удаленному рабочему столу"
+
+#: ../data/virt-viewer-mime.xml.in.h:1
+msgid "Virt-Viewer connection file"
+msgstr "Файл соединения virt-viewer"
+
+#: ../src/gbinding.c:637
+msgid "Source"
+msgstr "Источник"
+
+#: ../src/gbinding.c:638
+msgid "The source of the binding"
+msgstr "Первый элемент привязки"
+
+#: ../src/gbinding.c:652
+msgid "Target"
+msgstr "Цель"
+
+#: ../src/gbinding.c:653
+msgid "The target of the binding"
+msgstr "Второй элемент привязки"
+
+#: ../src/gbinding.c:668
+msgid "Source Property"
+msgstr "Свойство источника"
+
+#: ../src/gbinding.c:669
+msgid "The property on the source to bind"
+msgstr "Свойство первого элемента"
+
+#: ../src/gbinding.c:684
+msgid "Target Property"
+msgstr "Свойство цели"
+
+#: ../src/gbinding.c:685
+msgid "The property on the target to bind"
+msgstr "Свойство второго элемента"
+
+#: ../src/gbinding.c:699
+msgid "Flags"
+msgstr "Флаги"
+
+#: ../src/gbinding.c:700
+msgid "The binding flags"
+msgstr "Флаги привязки"
+
+#: ../src/remote-viewer-main.c:47
+#, c-format
+msgid "remote-viewer version %s\n"
+msgstr "remote-viewer, версия %s\n"
+
+#: ../src/remote-viewer-main.c:69
+#, c-format
+msgid "Invalid full-screen argument: %s"
+msgstr "Недопустимый параметр полноэкранного просмотра: %s"
+
+#: ../src/remote-viewer-main.c:123 ../src/virt-viewer-main.c:65
+msgid "Display version information"
+msgstr "Показать версию"
+
+#: ../src/remote-viewer-main.c:125 ../src/virt-viewer-main.c:67
+msgid "Display verbose information"
+msgstr "Подробный вывод"
+
+#: ../src/remote-viewer-main.c:127
+msgid "Set window title"
+msgstr "Изменить заголовок окна"
+
+#: ../src/remote-viewer-main.c:129 ../src/virt-viewer-main.c:69
+msgid "Direct connection with no automatic tunnels"
+msgstr "прямое подключение без туннелей"
+
+#: ../src/remote-viewer-main.c:131 ../src/virt-viewer-main.c:79
+msgid "Zoom level of window, in percentage"
+msgstr "Масштаб окна в процентах"
+
+#: ../src/remote-viewer-main.c:133 ../src/virt-viewer-main.c:81
+msgid "Display debugging information"
+msgstr "Показать сообщения диагностики"
+
+#: ../src/remote-viewer-main.c:135
+msgid ""
+"Open in full screen mode (auto-conf adjusts guest resolution to fit the "
+"client's)."
+msgstr "Полноэкранный режим (auto-conf откорректирует разрешение экрана гостя в соответствии с разрешением клиента)"
+
+#: ../src/remote-viewer-main.c:135
+msgid "<auto-conf>"
+msgstr "<auto-conf>"
+
+#: ../src/remote-viewer-main.c:138
+msgid "Open connection using Spice controller communication"
+msgstr "Открыть соединение с помощью контроллера Spice"
+
+#: ../src/remote-viewer-main.c:141 ../src/virt-viewer-main.c:85
+msgid "Customise hotkeys"
+msgstr "Настроить комбинации клавиш"
+
+#. Setup command line options
+#: ../src/remote-viewer-main.c:150
+msgid "- Remote viewer client"
+msgstr "— Клиент удаленного просмотра"
+
+#: ../src/remote-viewer-main.c:163
+#, c-format
+msgid ""
+"%s\n"
+"Run '%s --help' to see a full list of available command line options\n"
+msgstr "%s\nВыполните «%s --help» для просмотра полного списка параметров\n"
+
+#: ../src/remote-viewer-main.c:175
+#, c-format
+msgid "Error: extra arguments given while using Spice controller\n"
+msgstr "Ошибка. Лишние аргументы при использовании контроллера Spice\n"
+
+#: ../src/remote-viewer-main.c:182
+#, c-format
+msgid "Error: can't handle multiple URIs\n"
+msgstr "Ошибка. Обработка нескольких URI не допускается.\n"
+
+#: ../src/remote-viewer-main.c:190 ../src/virt-viewer-main.c:124
+#, c-format
+msgid "Zoom level must be within 10-200\n"
+msgstr "Масштаб должен быть в пределах 10-200\n"
+
+#: ../src/remote-viewer.c:281 ../src/remote-viewer.c:1017
+msgid "Failed to initiate connection"
+msgstr "Не удалось установить соединение"
+
+#: ../src/remote-viewer.c:296
+msgid "Display disabled by controller"
+msgstr "Дисплей отключен контроллером"
+
+#: ../src/remote-viewer.c:596
+#, c-format
+msgid "Controller connection failed: %s"
+msgstr "Ошибка подключения контроллера: %s"
+
+#. Create the widgets
+#: ../src/remote-viewer.c:876
+msgid "Connection details"
+msgstr "Свойства подключения"
+
+#: ../src/remote-viewer.c:891
+msgid "URL:"
+msgstr "URL:"
+
+#: ../src/remote-viewer.c:899
+msgid "Recent connections:"
+msgstr "Последние подключения:"
+
+#: ../src/remote-viewer.c:952
+msgid "Couldn't create a Spice session"
+msgstr "Не удалось создать сеанс Spice"
+
+#: ../src/remote-viewer.c:966
+msgid "Setting up Spice session..."
+msgstr "Инициализация сеанса Spice..."
+
+#: ../src/remote-viewer.c:988
+#, c-format
+msgid "Invalid file %s"
+msgstr "Недопустимый файл %s"
+
+#: ../src/remote-viewer.c:995
+msgid "Cannot determine the connection type from URI"
+msgstr "Не удалось определить тип подключения в URI"
+
+#: ../src/remote-viewer.c:1001
+msgid "Couldn't open oVirt session"
+msgstr ""
+
+#: ../src/remote-viewer.c:1008
+#, c-format
+msgid "Couldn't create a session for this type: %s"
+msgstr "Не удалось создать сеанс этого типа: %s"
+
+#. * Local variables:
+#. *  c-indent-level: 4
+#. *  c-basic-offset: 4
+#. *  indent-tabs-mode: nil
+#. * End:
+#. 
+#: ../src/virt-viewer-about.xml.h:1
+msgid "About Glade"
+msgstr "О  Glade"
+
+#: ../src/virt-viewer-about.xml.h:2
+msgid ""
+"Copyright (C) 2007-2012 Daniel P. Berrange\n"
+"Copyright (C) 2007-2012 Red Hat, Inc."
+msgstr "(C) 2007-2012 Daniel P. Berrange\n(C) 2007-2012 Red Hat, Inc."
+
+#: ../src/virt-viewer-about.xml.h:4
+msgid "A remote desktop client built with GTK-VNC, SPICE-GTK and libvirt"
+msgstr "Клиент удаленного рабочего стола построен на основе GTK-VNC, SPICE-GTK и libvirt"
+
+#: ../src/virt-viewer-about.xml.h:5
+msgid "virt-manager.org"
+msgstr "virt-manager.org"
+
+#: ../src/virt-viewer-about.xml.h:6
+msgid ""
+"This program is free software; you can redistribute it and/or modify\n"
+"it under the terms of the GNU General Public License as published by\n"
+"the Free Software Foundation; either version 2 of the License, or\n"
+"(at your option) any later version.\n"
+"\n"
+"This program is distributed in the hope that it will be useful,\n"
+"but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"GNU General Public License for more details.\n"
+"\n"
+"You should have received a copy of the GNU General Public License\n"
+"along with this program; if not, write to the Free Software\n"
+"Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA\n"
+msgstr "Эта программа относится к категории свободного программного обеспечения;\nеё можно распространять и изменять в соответствии с условиями \nлицензии GNU General Public License 2 или любой более поздней версии, \nопубликованной фондом свободного программного обеспечения. \n\nПрограмма распространяется в надежде, что она может быть полезной, \nно БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ВЫРАЖЕННЫХ ЯВНО ИЛИ ПОДРАЗУМЕВАЕМЫХ,\nВ ТОМ ЧИСЛЕ БЕЗ ГАРАНТИЙ КОММЕРЧЕСКОЙ ЦЕННОСТИ И \nПРИГОДНОСТИ ДЛЯ КОНКРЕТНОЙ ЦЕЛИ. \nПодробную информацию можно найти в тексте лицензии GNU. \n\nКопия лицензии GNU предоставляется вместе с этой программой.\nАдрес фонда: Free Software Foundation, \nInc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA\n"
+
+#: ../src/virt-viewer-about.xml.h:20
+msgid "The Fedora Translation Team"
+msgstr "Команда локализации Fedora"
+
+#: ../src/virt-viewer-app.c:279
+msgid "Do you want to close the session?"
+msgstr "Закрыть сеанс?"
+
+#: ../src/virt-viewer-app.c:281
+msgid "Do not ask me again"
+msgstr "Больше не спрашивать"
+
+#: ../src/virt-viewer-app.c:695
+#, c-format
+msgid "Waiting for display %d..."
+msgstr "Ожидание просмотра %d..."
+
+#: ../src/virt-viewer-app.c:787
+#, c-format
+msgid "Unknown graphic type for the guest %s"
+msgstr "Неизвестный тип графической подсистемы для гостя %s"
+
+#: ../src/virt-viewer-app.c:866
+msgid "Connect to ssh failed."
+msgstr "Ошибка соединения ssh."
+
+#: ../src/virt-viewer-app.c:868
+msgid "Can't connect to channel, SSH only supported."
+msgstr "Не удалось подключиться к каналу. Поддерживается только  SSH."
+
+#: ../src/virt-viewer-app.c:880
+msgid "Connect to channel unsupported."
+msgstr "Подключение к каналу не поддерживается."
+
+#: ../src/virt-viewer-app.c:962
+msgid "Connecting to graphic server"
+msgstr "Подключение к графическому серверу"
+
+#: ../src/virt-viewer-app.c:1095
+msgid "Guest domain has shutdown"
+msgstr "Гостевой домен завершил работу"
+
+#: ../src/virt-viewer-app.c:1150
+msgid "Connected to graphic server"
+msgstr "Установлено соединение с графическим сервером"
+
+#: ../src/virt-viewer-app.c:1174
+#, c-format
+msgid "Unable to connect to the graphic server %s"
+msgstr "Не удалось установить соединение с сервером %s"
+
+#: ../src/virt-viewer-app.c:1203
+#, c-format
+msgid ""
+"Unable to authenticate with remote desktop server at %s: %s\n"
+"Retry connection again?"
+msgstr "Не удалось пройти аутентификацию на удаленном сервере: %s: %s\nПовторить попытку подключения?"
+
+#: ../src/virt-viewer-app.c:1223
+#, c-format
+msgid "Unable to authenticate with remote desktop server: %s"
+msgstr "Не удалось пройти аутентификацию на удаленном сервере: %s"
+
+#: ../src/virt-viewer-app.c:1231
+#, c-format
+msgid "USB redirection error: %s"
+msgstr "Ошибка перенаправления USB: %s"
+
+#: ../src/virt-viewer-app.c:1817
+#, c-format
+msgid "Display %d"
+msgstr "Экран %d"
+
+#. * Local variables:
+#. *  c-indent-level: 4
+#. *  c-basic-offset: 4
+#. *  indent-tabs-mode: nil
+#. * End:
+#. 
+#: ../src/virt-viewer-auth.xml.h:1
+msgid "Authentication required"
+msgstr "Требуется проверка подлинности"
+
+#: ../src/virt-viewer-auth.xml.h:2
+msgid "label"
+msgstr "метка"
+
+#: ../src/virt-viewer-auth.xml.h:3
+msgid "Password:"
+msgstr "Пароль:"
+
+#: ../src/virt-viewer-auth.xml.h:4
+msgid "Username:"
+msgstr "Пользователь:"
+
+#: ../src/virt-viewer-main.c:38
+#, c-format
+msgid "%s version %s\n"
+msgstr "%s версия %s\n"
+
+#: ../src/virt-viewer-main.c:71
+msgid "Attach to the local display using libvirt"
+msgstr "Подключиться к локальному графическому сеансу с помощью libvirt"
+
+#: ../src/virt-viewer-main.c:73
+msgid "Connect to hypervisor"
+msgstr "Подключиться к гипервизору"
+
+#: ../src/virt-viewer-main.c:75
+msgid "Wait for domain to start"
+msgstr "Ожидать запуска домена"
+
+#: ../src/virt-viewer-main.c:77
+msgid "Reconnect to domain upon restart"
+msgstr "Заново подключиться к домену после перезапуска"
+
+#: ../src/virt-viewer-main.c:83
+msgid "Open in full screen mode"
+msgstr "Полноэкранный режим"
+
+#: ../src/virt-viewer-main.c:91
+msgid "Virt Viewer"
+msgstr "Просмотр виртуальных систем"
+
+#: ../src/virt-viewer-main.c:94
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options"
+msgstr "Выполните «%s --help» для просмотра полного списка параметров"
+
+#. Setup command line options
+#: ../src/virt-viewer-main.c:99
+msgid "- Virtual machine graphical console"
+msgstr "— графическая консоль виртуальной машины"
+
+#: ../src/virt-viewer-main.c:119
+#, c-format
+msgid ""
+"\n"
+"Usage: %s [OPTIONS] DOMAIN-NAME|ID|UUID\n"
+"\n"
+"%s\n"
+"\n"
+msgstr "\nФормат: %s [ПАРАМЕТРЫ] ДОМЕН|ID|UUID\n\n%s\n\n"
+
+#. Create the widgets
+#: ../src/virt-viewer-session-spice.c:479
+msgid "Select USB devices for redirection"
+msgstr "Выбрать устройства USB для перенаправления"
+
+#: ../src/virt-viewer-session-vnc.c:147
+#, c-format
+msgid "Unsupported authentication type %d"
+msgstr "Неподдерживаемый тип аутентификации  %d"
+
+#: ../src/virt-viewer-window.c:551 ../src/virt-viewer.xml.h:13
+msgid "Ctrl+Alt+_Del"
+msgstr "Ctrl+Alt+_Del"
+
+#: ../src/virt-viewer-window.c:552 ../src/virt-viewer.xml.h:14
+msgid "Ctrl+Alt+_Backspace"
+msgstr "Ctrl+Alt+_Backspace"
+
+#: ../src/virt-viewer-window.c:554 ../src/virt-viewer.xml.h:15
+msgid "Ctrl+Alt+F_1"
+msgstr "Ctrl+Alt+F_1"
+
+#: ../src/virt-viewer-window.c:555 ../src/virt-viewer.xml.h:16
+msgid "Ctrl+Alt+F_2"
+msgstr "Ctrl+Alt+F_2"
+
+#: ../src/virt-viewer-window.c:556 ../src/virt-viewer.xml.h:17
+msgid "Ctrl+Alt+F_3"
+msgstr "Ctrl+Alt+F_3"
+
+#: ../src/virt-viewer-window.c:557 ../src/virt-viewer.xml.h:18
+msgid "Ctrl+Alt+F_4"
+msgstr "Ctrl+Alt+F_4"
+
+#: ../src/virt-viewer-window.c:558 ../src/virt-viewer.xml.h:19
+msgid "Ctrl+Alt+F_5"
+msgstr "Ctrl+Alt+F_5"
+
+#: ../src/virt-viewer-window.c:559 ../src/virt-viewer.xml.h:20
+msgid "Ctrl+Alt+F_6"
+msgstr "Ctrl+Alt+F_6"
+
+#: ../src/virt-viewer-window.c:560 ../src/virt-viewer.xml.h:21
+msgid "Ctrl+Alt+F_7"
+msgstr "Ctrl+Alt+F_7"
+
+#: ../src/virt-viewer-window.c:561 ../src/virt-viewer.xml.h:22
+msgid "Ctrl+Alt+F_8"
+msgstr "Ctrl+Alt+F_8"
+
+#: ../src/virt-viewer-window.c:562 ../src/virt-viewer.xml.h:23
+msgid "Ctrl+Alt+F_9"
+msgstr "Ctrl+Alt+F_9"
+
+#: ../src/virt-viewer-window.c:563 ../src/virt-viewer.xml.h:24
+msgid "Ctrl+Alt+F1_0"
+msgstr "Ctrl+Alt+F1_0"
+
+#: ../src/virt-viewer-window.c:564 ../src/virt-viewer.xml.h:25
+msgid "Ctrl+Alt+F11"
+msgstr "Ctrl+Alt+F11"
+
+#: ../src/virt-viewer-window.c:565 ../src/virt-viewer.xml.h:26
+msgid "Ctrl+Alt+F12"
+msgstr "Ctrl+Alt+F12"
+
+#: ../src/virt-viewer-window.c:861 ../src/virt-viewer.xml.h:2
+msgid "Screenshot"
+msgstr "Снимок экрана"
+
+#: ../src/virt-viewer-window.c:937
+msgid "Disconnect"
+msgstr "Отключиться"
+
+#: ../src/virt-viewer-window.c:944 ../src/virt-viewer-window.c:945
+#: ../src/virt-viewer.xml.h:3
+msgid "USB device selection"
+msgstr "Выбор устройства USB"
+
+#: ../src/virt-viewer-window.c:953
+msgid "Send key combination"
+msgstr "Отправить комбинацию клавиш"
+
+#: ../src/virt-viewer-window.c:962 ../src/virt-viewer-window.c:963
+msgid "Leave fullscreen"
+msgstr "Выйти из полноэкранного режима"
+
+#: ../src/virt-viewer-window.c:1042
+msgid "Ctrl+Alt"
+msgstr "Ctrl+Alt"
+
+#: ../src/virt-viewer-window.c:1045
+#, c-format
+msgid "(Press %s to release pointer)"
+msgstr "(нажмите %s для освобождения курсора)"
+
+#. translators:
+#. * This is "<ungrab (or empty)><space (or empty)><subtitle (or empty)> -
+#. <appname>"
+#. * Such as: "(Press Ctrl+Alt to release pointer) BigCorpTycoon MOTD - Virt
+#. Viewer"
+#. 
+#: ../src/virt-viewer-window.c:1056
+#, c-format
+msgid "%s%s%s - %s"
+msgstr "%s%s%s - %s"
+
+#. translators: <space>
+#: ../src/virt-viewer-window.c:1060
+msgid " "
+msgstr " "
+
+#: ../src/virt-viewer-file.c:610
+#, c-format
+msgid "At least %s version %s is required to setup this connection"
+msgstr ""
+
+#: ../src/virt-viewer.c:144
+msgid "Waiting for guest domain to re-start"
+msgstr "Ожидание перезапуска гостевого домена"
+
+#: ../src/virt-viewer.c:329
+#, c-format
+msgid "Cannot determine the graphic type for the guest %s"
+msgstr "Не удалось определить тип графической подсистемы для гостя %s"
+
+#: ../src/virt-viewer.c:342
+#, c-format
+msgid "Cannot determine the graphic address for the guest %s"
+msgstr "Не удалось определить адрес графического интерфейса для гостя %s"
+
+#: ../src/virt-viewer.c:365
+#, c-format
+msgid "Cannot determine the host for the guest %s"
+msgstr "Не удалось определить хост для гостя %s"
+
+#: ../src/virt-viewer.c:531
+msgid "Waiting for libvirt to start"
+msgstr "Ожидание запуска libvirt"
+
+#: ../src/virt-viewer.c:535
+msgid "Finding guest domain"
+msgstr "Поиск гостевого домена"
+
+#: ../src/virt-viewer.c:539
+msgid "Waiting for guest domain to be created"
+msgstr "Ожидание создания гостевого домена"
+
+#: ../src/virt-viewer.c:544
+#, c-format
+msgid "Cannot find guest domain %s"
+msgstr "Гостевой домен %s не найден"
+
+#: ../src/virt-viewer.c:551
+msgid "Checking guest domain status"
+msgstr "Проверка статуса гостевого домена"
+
+#: ../src/virt-viewer.c:558
+msgid "Waiting for guest domain to start"
+msgstr "Ожидание запуска гостевого домена"
+
+#: ../src/virt-viewer.c:565
+msgid "Waiting for guest domain to start server"
+msgstr "Ожидание запуска сервера гостевого домена"
+
+#: ../src/virt-viewer.c:679
+#, c-format
+msgid "Unable to connect to libvirt with URI %s"
+msgstr "Не удалось подключиться к libvirt на URI %s"
+
+#: ../src/virt-viewer.c:680
+msgid "[none]"
+msgstr "[нет]"
+
+#. * Local variables:
+#. *  c-indent-level: 4
+#. *  c-basic-offset: 4
+#. *  indent-tabs-mode: nil
+#. * End:
+#. 
+#: ../src/virt-viewer.xml.h:1
+msgid "_File"
+msgstr "_Файл"
+
+#: ../src/virt-viewer.xml.h:4
+msgid "Smartcard insertion"
+msgstr "Подключение смарт-карты"
+
+#: ../src/virt-viewer.xml.h:5
+msgid "Smartcard removal"
+msgstr "Удаление смарт-карты"
+
+#: ../src/virt-viewer.xml.h:6
+msgid "_View"
+msgstr "_Просмотр"
+
+#: ../src/virt-viewer.xml.h:7
+msgid "Full screen"
+msgstr "Во весь экран"
+
+#: ../src/virt-viewer.xml.h:8
+msgid "_Zoom"
+msgstr "_Масштаб"
+
+#: ../src/virt-viewer.xml.h:9
+msgid "Automatically resize"
+msgstr "Автоматически изменить размер"
+
+#: ../src/virt-viewer.xml.h:10
+msgid "Displays"
+msgstr "Экраны"
+
+#: ../src/virt-viewer.xml.h:11
+msgid "Release cursor"
+msgstr "Освободить курсор"
+
+#: ../src/virt-viewer.xml.h:12
+msgid "_Send key"
+msgstr "О_тправить клавишу"
+
+#: ../src/virt-viewer.xml.h:27
+msgid "_PrintScreen"
+msgstr "_PrintScreen"
+
+#: ../src/virt-viewer.xml.h:28
+msgid "_Help"
+msgstr "_Справка"

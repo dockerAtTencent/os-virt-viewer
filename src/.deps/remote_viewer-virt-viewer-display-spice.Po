@@ -1,0 +1,1875 @@
+remote_viewer-virt-viewer-display-spice.o: virt-viewer-display-spice.c \
+ ../config.h /usr/x86_64-w64-mingw32/sys-root/mingw/include/math.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/crtdefs.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_mac.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_secapi.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/vadefs.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/sdks/_mingw_directx.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/sdks/_mingw_ddk.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-audio.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib-object.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gbinding.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/galloca.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtypes.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/lib/glib-2.0/include/glibconfig.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmacros.h \
+ /usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include/stddef.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/stddef.h \
+ /usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed/limits.h \
+ /usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed/syslimits.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/limits.h \
+ /usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include/float.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/float.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gversionmacros.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/time.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/_timeval.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/time_s.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/sys/timeb.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/sys/timeb_s.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread_time.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/garray.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gasyncqueue.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gthread.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gatomic.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gerror.h \
+ /usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include/stdarg.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/stdarg.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_stdarg.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gquark.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gbacktrace.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/signal.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gbase64.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gbitlock.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gbookmarkfile.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gbytes.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gcharset.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gchecksum.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gconvert.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gdataset.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gdate.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gdatetime.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtimezone.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gdir.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/genviron.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gfileutils.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/ggettext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/ghash.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/glist.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gnode.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/ghmac.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gchecksum.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/ghook.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/ghostutils.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/giochannel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmain.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gpoll.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gslist.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gstring.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gunicode.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gutils.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gkeyfile.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmappedfile.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmarkup.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmessages.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/goption.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gpattern.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gprimes.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gqsort.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gqueue.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/grand.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gregex.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gscanner.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gsequence.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gshell.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gslice.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gspawn.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gstrfuncs.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gstringchunk.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtestutils.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gthreadpool.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtimer.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtrashstack.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtree.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gurifuncs.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gvarianttype.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gvariant.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gversion.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gwin32.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/gallocator.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/gcache.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/gcompletion.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/gmain.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/grel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/gthread.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gobject.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gtype.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gvalue.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gparam.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gclosure.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gsignal.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gmarshal.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gboxed.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/glib-types.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/genums.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gparamspecs.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gsourceclosure.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gtypemodule.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gtypeplugin.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gvaluearray.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gvaluetypes.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-util.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-session.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-types.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-glib-enums.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gi18n.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/libintl.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/locale.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/stdio.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_print_push.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_off_t.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/swprintf.inl \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/stdio_s.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_print_pop.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/string.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/string_s.h \
+ virt-viewer-util.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtk.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdk.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkapplaunchcontext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gio.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/giotypes.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gioenums.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gaction.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gactiongroup.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gactiongroupexporter.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gactionmap.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gappinfo.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gapplication.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gapplicationcommandline.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gasyncinitable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/ginitable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gasyncresult.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gbufferedinputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfilterinputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/ginputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gbufferedoutputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfilteroutputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/goutputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gcancellable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gcharsetconverter.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gconverter.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gcontenttype.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gconverterinputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gconverteroutputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gcredentials.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdatainputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdataoutputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusaddress.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusauthobserver.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusconnection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbuserror.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusintrospection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusmessage.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusmethodinvocation.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusnameowning.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusnamewatching.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusproxy.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusserver.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusutils.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdrive.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gemblemedicon.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gicon.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gemblem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileattribute.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileenumerator.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfile.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileicon.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileinfo.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileinputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileiostream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/giostream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gioerror.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfilemonitor.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfilenamecompleter.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileoutputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/ginetaddress.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/ginetaddressmask.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/ginetsocketaddress.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketaddress.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gioenumtypes.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/giomodule.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gmodule.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gioscheduler.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gloadableicon.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmemoryinputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmemoryoutputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmount.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmountoperation.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gnativevolumemonitor.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gvolumemonitor.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gnetworkaddress.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gnetworkmonitor.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gnetworkservice.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gpermission.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gpollableinputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gpollableoutputstream.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gpollableutils.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gproxy.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gproxyaddress.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gproxyaddressenumerator.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketaddressenumerator.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gproxyresolver.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gresolver.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gresource.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gseekable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsettingsschema.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsettings.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsimpleaction.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsimpleactiongroup.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gactiongroup.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gactionmap.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsimpleasyncresult.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsimplepermission.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketclient.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketconnectable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketconnection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocket.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketcontrolmessage.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketlistener.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketservice.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsrvtarget.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsimpleproxyresolver.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtask.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtcpconnection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtcpwrapperconnection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtestdbus.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gthemedicon.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gthreadedsocketservice.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsbackend.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlscertificate.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsclientconnection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsconnection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsdatabase.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsfiledatabase.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsinteraction.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsserverconnection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlspassword.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gvfs.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gvolume.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gzlibcompressor.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gzlibdecompressor.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusinterface.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusinterfaceskeleton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobject.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobjectskeleton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobjectproxy.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobjectmanager.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobjectmanagerclient.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobjectmanagerserver.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusactiongroup.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/giotypes.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gremoteactiongroup.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmenumodel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmenu.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmenuexporter.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusmenumodel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkscreen.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/cairo/cairo.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/cairo/cairo-version.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/cairo/cairo-features.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/cairo/cairo-deprecated.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdktypes.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-attributes.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-font.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-coverage.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-types.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-gravity.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-matrix.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-script.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-language.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-bidi-type.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-break.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-item.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-context.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-fontmap.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-fontset.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-engine.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-glyph.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-enum-types.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-features.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-glyph-item.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-layout.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-tabs.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-renderer.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-utils.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/lib/gtk-2.0/include/gdkconfig.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkdisplay.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkevents.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkcolor.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkdnd.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkinput.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkcairo.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkpixbuf.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkrgb.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-features.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-animation.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-io.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pangocairo.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkcursor.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkdisplaymanager.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkdrawable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkgc.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkenumtypes.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkfont.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkimage.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkkeys.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkpango.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkpixmap.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkproperty.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkregion.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkselection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkspawn.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdktestutils.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkwindow.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkvisual.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaboutdialog.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkdialog.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkwindow.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaccelgroup.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkenums.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbin.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcontainer.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkwidget.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkobject.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktypeutils.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktypebuiltins.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkdebug.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkadjustment.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkstyle.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtksettings.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrc.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atk.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkobject.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkstate.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkrelationtype.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkaction.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkcomponent.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkutil.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkdocument.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkeditabletext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atktext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkgobjectaccessible.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkhyperlink.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkhyperlinkimpl.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkhypertext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkimage.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atknoopobject.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atknoopobjectfactory.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkobjectfactory.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkplug.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkregistry.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkobjectfactory.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkrelation.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkrelationset.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkselection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atksocket.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkstateset.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkstreamablecontent.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atktable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkmisc.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkvalue.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkversion.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkwindow.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaccellabel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtklabel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmisc.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmenu.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmenushell.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaccelmap.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaccessible.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaction.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkactiongroup.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkactivatable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkalignment.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkarrow.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaspectframe.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkframe.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkassistant.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbbox.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbox.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbindings.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbuildable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbuilder.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkimage.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcalendar.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtksignal.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmarshal.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcelleditable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcelllayout.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrenderer.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreeviewcolumn.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreemodel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreesortable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrendereraccel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrenderertext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrenderercombo.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrendererpixbuf.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrendererprogress.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrendererspin.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrendererspinner.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrenderertoggle.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellview.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcheckbutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktogglebutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcheckmenuitem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmenuitem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkitem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkclipboard.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkselection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextiter.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktexttag.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextchild.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcolorbutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcolorsel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvbox.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcolorseldialog.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcombobox.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreeview.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkdnd.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkentry.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkeditable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkimcontext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkentrybuffer.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkentrycompletion.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkliststore.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreemodelfilter.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcomboboxentry.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcomboboxtext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkdrawingarea.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkeventbox.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkexpander.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfixed.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilechooser.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilefilter.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilechooserbutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhbox.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilechooserdialog.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilechooserwidget.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfontbutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfontsel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkgc.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhandlebox.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhbbox.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhpaned.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkpaned.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhruler.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkruler.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhscale.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkscale.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrange.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhscrollbar.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkscrollbar.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhseparator.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkseparator.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhsv.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkiconfactory.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkicontheme.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkiconview.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktooltip.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkimagemenuitem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkimcontextsimple.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkimmulticontext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkinfobar.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkinvisible.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtklayout.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtklinkbutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmain.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmenubar.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmenutoolbutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolbutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolitem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktooltips.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtksizegroup.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmessagedialog.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmodules.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmountoperation.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtknotebook.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkoffscreenwindow.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkorientable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkpagesetup.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkpapersize.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkplug.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtksocket.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprintcontext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprintoperation.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprintsettings.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprintoperationpreview.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprogressbar.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprogress.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkradioaction.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoggleaction.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkradiobutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkradiomenuitem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkradiotoolbutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoggletoolbutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentaction.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentmanager.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentchooser.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentfilter.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentchooserdialog.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentchoosermenu.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentchooserwidget.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkscalebutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkscrolledwindow.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvscrollbar.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkviewport.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkseparatormenuitem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkseparatortoolitem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkshow.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkspinbutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkspinner.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkstatusbar.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkstatusicon.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkstock.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktearoffmenuitem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextbuffer.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktexttagtable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextmark.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextbufferrichtext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextview.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolbar.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkpixmap.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolitemgroup.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolpalette.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolshell.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktestutils.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreednd.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreemodelsort.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreeselection.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreestore.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkuimanager.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvbbox.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkversion.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvolumebutton.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvpaned.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvruler.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvscale.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvseparator.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktext.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktree.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreeitem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkclist.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcombo.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkctree.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcurve.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilesel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkgamma.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkinputdialog.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkitemfactory.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtklist.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtklistitem.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkoldeditable.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkoptionmenu.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkpreview.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktipsquery.h \
+ virt-viewer-display-spice.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-gtk-2.0/spice-widget.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-client.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-1/spice/enums.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-1/spice/protocol.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-1/spice/types.h \
+ /usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include/stdint.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/stdint.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-1/spice/start-packed.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-1/spice/end-packed.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-channel.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-option.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-main.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-client.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-display.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-cursor.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-inputs.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-playback.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-record.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-smartcard.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-usbredir.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-port.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/smartcard-manager.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/usb-device-manager.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-audio.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-gtk-2.0/spice-grabsequence.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-gtk-2.0/spice-widget-enums.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-util.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-gtk-2.0/spice-gtk-session.h \
+ virt-viewer-display.h virt-viewer-enums.h virt-viewer-session-spice.h \
+ virt-viewer-session.h virt-viewer-app.h virt-viewer-window.h \
+ virt-viewer-notebook.h virt-viewer-file.h virt-glib-compat.h \
+ virt-viewer-auth.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/libvirt/libvirt.h \
+ /usr/x86_64-w64-mingw32/sys-root/mingw/include/sys/types.h
+
+../config.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/math.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/crtdefs.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_mac.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_secapi.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/vadefs.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/sdks/_mingw_directx.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/sdks/_mingw_ddk.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-audio.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib-object.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gbinding.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/galloca.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtypes.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/lib/glib-2.0/include/glibconfig.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmacros.h:
+
+/usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include/stddef.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/stddef.h:
+
+/usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed/limits.h:
+
+/usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include-fixed/syslimits.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/limits.h:
+
+/usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include/float.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/float.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gversionmacros.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/time.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/_timeval.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/time_s.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/sys/timeb.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/sys/timeb_s.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pthread_time.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/garray.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gasyncqueue.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gthread.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gatomic.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gerror.h:
+
+/usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include/stdarg.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/stdarg.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_stdarg.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gquark.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gbacktrace.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/signal.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gbase64.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gbitlock.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gbookmarkfile.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gbytes.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gcharset.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gchecksum.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gconvert.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gdataset.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gdate.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gdatetime.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtimezone.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gdir.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/genviron.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gfileutils.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/ggettext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/ghash.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/glist.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gnode.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/ghmac.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gchecksum.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/ghook.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/ghostutils.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/giochannel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmain.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gpoll.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gslist.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gstring.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gunicode.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gutils.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gkeyfile.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmappedfile.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmarkup.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gmessages.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/goption.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gpattern.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gprimes.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gqsort.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gqueue.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/grand.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gregex.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gscanner.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gsequence.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gshell.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gslice.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gspawn.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gstrfuncs.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gstringchunk.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtestutils.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gthreadpool.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtimer.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtrashstack.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gtree.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gurifuncs.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gvarianttype.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gvariant.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gversion.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gwin32.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/gallocator.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/gcache.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/gcompletion.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/gmain.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/grel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/deprecated/gthread.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gobject.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gtype.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gvalue.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gparam.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gclosure.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gsignal.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gmarshal.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gboxed.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/glib-types.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/genums.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gparamspecs.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gsourceclosure.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gtypemodule.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gtypeplugin.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gvaluearray.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gobject/gvaluetypes.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-util.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-session.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-types.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-glib-enums.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/glib/gi18n.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/libintl.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/locale.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/stdio.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_print_push.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_off_t.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/swprintf.inl:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/stdio_s.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/_mingw_print_pop.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/string.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/sec_api/string_s.h:
+
+virt-viewer-util.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtk.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdk.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkapplaunchcontext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gio.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/giotypes.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gioenums.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gaction.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gactiongroup.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gactiongroupexporter.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gactionmap.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gappinfo.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gapplication.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gapplicationcommandline.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gasyncinitable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/ginitable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gasyncresult.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gbufferedinputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfilterinputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/ginputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gbufferedoutputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfilteroutputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/goutputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gcancellable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gcharsetconverter.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gconverter.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gcontenttype.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gconverterinputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gconverteroutputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gcredentials.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdatainputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdataoutputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusaddress.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusauthobserver.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusconnection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbuserror.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusintrospection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusmessage.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusmethodinvocation.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusnameowning.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusnamewatching.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusproxy.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusserver.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusutils.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdrive.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gemblemedicon.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gicon.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gemblem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileattribute.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileenumerator.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfile.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileicon.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileinfo.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileinputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileiostream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/giostream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gioerror.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfilemonitor.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfilenamecompleter.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gfileoutputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/ginetaddress.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/ginetaddressmask.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/ginetsocketaddress.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketaddress.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gioenumtypes.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/giomodule.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gmodule.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gioscheduler.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gloadableicon.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmemoryinputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmemoryoutputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmount.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmountoperation.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gnativevolumemonitor.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gvolumemonitor.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gnetworkaddress.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gnetworkmonitor.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gnetworkservice.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gpermission.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gpollableinputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gpollableoutputstream.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gpollableutils.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gproxy.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gproxyaddress.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gproxyaddressenumerator.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketaddressenumerator.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gproxyresolver.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gresolver.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gresource.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gseekable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsettingsschema.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsettings.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsimpleaction.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsimpleactiongroup.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gactiongroup.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gactionmap.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsimpleasyncresult.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsimplepermission.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketclient.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketconnectable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketconnection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocket.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketcontrolmessage.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketlistener.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsocketservice.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsrvtarget.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gsimpleproxyresolver.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtask.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtcpconnection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtcpwrapperconnection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtestdbus.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gthemedicon.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gthreadedsocketservice.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsbackend.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlscertificate.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsclientconnection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsconnection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsdatabase.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsfiledatabase.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsinteraction.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlsserverconnection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gtlspassword.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gvfs.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gvolume.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gzlibcompressor.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gzlibdecompressor.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusinterface.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusinterfaceskeleton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobject.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobjectskeleton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobjectproxy.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobjectmanager.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobjectmanagerclient.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusobjectmanagerserver.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusactiongroup.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/giotypes.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gremoteactiongroup.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmenumodel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmenu.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gmenuexporter.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/glib-2.0/gio/gdbusmenumodel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkscreen.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/cairo/cairo.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/cairo/cairo-version.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/cairo/cairo-features.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/cairo/cairo-deprecated.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdktypes.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-attributes.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-font.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-coverage.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-types.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-gravity.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-matrix.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-script.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-language.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-bidi-type.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-break.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-item.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-context.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-fontmap.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-fontset.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-engine.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-glyph.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-enum-types.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-features.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-glyph-item.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-layout.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-tabs.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-renderer.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pango-utils.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/lib/gtk-2.0/include/gdkconfig.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkdisplay.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkevents.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkcolor.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkdnd.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkinput.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkcairo.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkpixbuf.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkrgb.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-features.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-core.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-transform.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-animation.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-simple-anim.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-io.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-loader.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gdk-pixbuf-2.0/gdk-pixbuf/gdk-pixbuf-enum-types.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/pango-1.0/pango/pangocairo.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkcursor.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkdisplaymanager.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkdrawable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkgc.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkenumtypes.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkfont.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkimage.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkkeys.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkpango.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkpixmap.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkproperty.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkregion.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkselection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkspawn.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdktestutils.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkwindow.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gdk/gdkvisual.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaboutdialog.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkdialog.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkwindow.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaccelgroup.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkenums.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbin.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcontainer.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkwidget.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkobject.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktypeutils.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktypebuiltins.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkdebug.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkadjustment.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkstyle.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtksettings.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrc.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atk.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkobject.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkstate.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkrelationtype.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkaction.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkcomponent.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkutil.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkdocument.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkeditabletext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atktext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkgobjectaccessible.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkhyperlink.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkhyperlinkimpl.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkhypertext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkimage.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atknoopobject.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atknoopobjectfactory.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkobjectfactory.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkplug.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkregistry.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkobjectfactory.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkrelation.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkrelationset.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkselection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atksocket.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkstateset.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkstreamablecontent.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atktable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkmisc.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkvalue.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkversion.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/atk-1.0/atk/atkwindow.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaccellabel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtklabel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmisc.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmenu.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmenushell.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaccelmap.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaccessible.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaction.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkactiongroup.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkactivatable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkalignment.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkarrow.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkaspectframe.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkframe.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkassistant.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbbox.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbox.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbindings.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbuildable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbuilder.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkbutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkimage.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcalendar.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtksignal.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmarshal.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcelleditable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcelllayout.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrenderer.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreeviewcolumn.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreemodel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreesortable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrendereraccel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrenderertext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrenderercombo.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrendererpixbuf.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrendererprogress.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrendererspin.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrendererspinner.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellrenderertoggle.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcellview.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcheckbutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktogglebutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcheckmenuitem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmenuitem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkitem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkclipboard.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkselection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextiter.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktexttag.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextchild.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcolorbutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcolorsel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvbox.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcolorseldialog.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcombobox.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreeview.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkdnd.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkentry.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkeditable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkimcontext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkentrybuffer.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkentrycompletion.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkliststore.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreemodelfilter.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcomboboxentry.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcomboboxtext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkdrawingarea.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkeventbox.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkexpander.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfixed.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilechooser.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilefilter.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilechooserbutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhbox.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilechooserdialog.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilechooserwidget.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfontbutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfontsel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkgc.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhandlebox.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhbbox.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhpaned.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkpaned.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhruler.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkruler.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhscale.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkscale.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrange.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhscrollbar.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkscrollbar.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhseparator.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkseparator.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkhsv.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkiconfactory.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkicontheme.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkiconview.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktooltip.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkimagemenuitem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkimcontextsimple.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkimmulticontext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkinfobar.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkinvisible.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtklayout.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtklinkbutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmain.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmenubar.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmenutoolbutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolbutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolitem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktooltips.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtksizegroup.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmessagedialog.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmodules.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkmountoperation.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtknotebook.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkoffscreenwindow.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkorientable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkpagesetup.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkpapersize.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkplug.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtksocket.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprintcontext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprintoperation.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprintsettings.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprintoperationpreview.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprogressbar.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkprogress.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkradioaction.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoggleaction.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkradiobutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkradiomenuitem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkradiotoolbutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoggletoolbutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentaction.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentmanager.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentchooser.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentfilter.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentchooserdialog.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentchoosermenu.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkrecentchooserwidget.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkscalebutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkscrolledwindow.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvscrollbar.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkviewport.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkseparatormenuitem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkseparatortoolitem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkshow.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkspinbutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkspinner.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkstatusbar.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkstatusicon.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkstock.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktearoffmenuitem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextbuffer.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktexttagtable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextmark.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextbufferrichtext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktextview.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolbar.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkpixmap.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolitemgroup.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolpalette.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktoolshell.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktestutils.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreednd.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreemodelsort.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreeselection.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreestore.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkuimanager.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvbbox.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkversion.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvolumebutton.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvpaned.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvruler.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvscale.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkvseparator.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktext.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktree.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktreeitem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkclist.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcombo.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkctree.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkcurve.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkfilesel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkgamma.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkinputdialog.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkitemfactory.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtklist.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtklistitem.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkoldeditable.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkoptionmenu.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtkpreview.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/gtk-2.0/gtk/gtktipsquery.h:
+
+virt-viewer-display-spice.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-gtk-2.0/spice-widget.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-client.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-1/spice/enums.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-1/spice/protocol.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-1/spice/types.h:
+
+/usr/lib64/gcc/x86_64-w64-mingw32/4.8.3/include/stdint.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/stdint.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-1/spice/start-packed.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-1/spice/end-packed.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-channel.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-option.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-main.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-client.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-display.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-cursor.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-inputs.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-playback.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-record.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-smartcard.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-usbredir.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/channel-port.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/smartcard-manager.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/usb-device-manager.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-audio.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-gtk-2.0/spice-grabsequence.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-gtk-2.0/spice-widget-enums.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-glib-2.0/spice-util.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/spice-client-gtk-2.0/spice-gtk-session.h:
+
+virt-viewer-display.h:
+
+virt-viewer-enums.h:
+
+virt-viewer-session-spice.h:
+
+virt-viewer-session.h:
+
+virt-viewer-app.h:
+
+virt-viewer-window.h:
+
+virt-viewer-notebook.h:
+
+virt-viewer-file.h:
+
+virt-glib-compat.h:
+
+virt-viewer-auth.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/libvirt/libvirt.h:
+
+/usr/x86_64-w64-mingw32/sys-root/mingw/include/sys/types.h:

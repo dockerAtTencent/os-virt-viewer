@@ -1,0 +1,680 @@
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <ref name='libosinfo'/>
+  </start>
+
+  <define name='libosinfo'>
+    <element name='libosinfo'>
+      <attribute name='version'>
+        <choice>
+          <value>0.0.1</value>
+        </choice>
+      </attribute>
+
+      <zeroOrMore>
+        <choice>
+          <ref name='datamap'/>
+          <ref name='device'/>
+          <ref name='os'/>
+          <ref name='platform'/>
+          <ref name='deployment'/>
+          <ref name='install-script'/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name='datamap'>
+    <element name='datamap'>
+      <attribute name='id'>
+        <ref name='url'/>
+      </attribute>
+      <oneOrMore>
+        <element name='entry'>
+          <attribute name='inval'>
+            <text/>
+          </attribute>
+          <attribute name='outval'>
+            <text/>
+          </attribute>
+        </element>
+      </oneOrMore>
+    </element>
+  </define>
+
+  <define name='device'>
+    <element name='device'>
+      <attribute name='id'>
+        <ref name='url'/>
+      </attribute>
+      <interleave>
+        <oneOrMore>
+          <element name='name'>
+            <optional>
+              <attribute name='xml:lang'>
+                <text/>
+              </attribute>
+            </optional>
+            <text/>
+          </element>
+        </oneOrMore>
+        <element name='bus-type'>
+          <choice>
+            <value>isa</value>
+            <value>pci</value>
+            <value>usb</value>
+            <value>xen</value>
+            <value>ps2</value>
+            <value>ide</value>
+            <value>virtio</value>
+          </choice>
+        </element>
+        <optional>
+          <element name='class'>
+            <choice>
+              <value>audio</value>
+              <value>block</value>
+              <value>console</value>
+              <value>filesystem</value>
+              <value>input</value>
+              <value>memory.balloon</value>
+              <value>net</value>
+              <value>video</value>
+              <value>watchdog</value>
+            </choice>
+          </element>
+        </optional>
+        <zeroOrMore>
+          <element name='vendor'>
+            <optional>
+              <attribute name='xml:lang'>
+                <text/>
+              </attribute>
+            </optional>
+            <text/>
+          </element>
+        </zeroOrMore>
+        <optional>
+          <element name='vendor-id'>
+            <ref name='hexid'/>
+          </element>
+        </optional>
+        <optional>
+          <element name='product'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <element name='product-id'>
+            <ref name='hexid'/>
+          </element>
+        </optional>
+        <optional>
+          <element name='subsystem'>
+            <text/>
+          </element>
+        </optional>
+      </interleave>
+    </element>
+  </define>
+
+  <define name="product-attr">
+    <attribute name='id'>
+      <ref name='url'/>
+    </attribute>
+  </define>
+
+  <define name="product-content">
+    <interleave>
+      <oneOrMore>
+        <element name='vendor'>
+          <optional>
+            <attribute name='xml:lang'>
+              <text/>
+            </attribute>
+          </optional>
+          <text/>
+        </element>
+      </oneOrMore>
+      <oneOrMore>
+        <element name='name'>
+          <optional>
+            <attribute name='xml:lang'>
+              <text/>
+            </attribute>
+          </optional>
+          <text/>
+        </element>
+      </oneOrMore>
+      <oneOrMore>
+        <element name='short-id'>
+          <text/>
+        </element>
+      </oneOrMore>
+      <optional>
+        <element name='version'>
+          <text/>
+        </element>
+      </optional>
+      <optional>
+        <element name='codename'>
+          <text/>
+        </element>
+      </optional>
+      <optional>
+        <element name='family'>
+          <text/>
+        </element>
+      </optional>
+      <optional>
+        <element name='distro'>
+          <text/>
+        </element>
+      </optional>
+    </interleave>
+  </define>
+
+  <define name="product-dates">
+    <interleave>
+      <optional>
+        <element name='release-date'>
+          <ref name='date'/>
+        </element>
+      </optional>
+      <optional>
+        <element name='eol-date'>
+          <ref name='date'/>
+        </element>
+      </optional>
+    </interleave>
+  </define>
+
+  <define name="product-rel">
+    <interleave>
+      <zeroOrMore>
+        <element name="upgrades">
+          <attribute name='id'>
+            <ref name="url"/>
+          </attribute>
+        </element>
+      </zeroOrMore>
+      <zeroOrMore>
+        <element name="derives-from">
+          <attribute name='id'>
+            <ref name="url"/>
+          </attribute>
+        </element>
+      </zeroOrMore>
+      <optional>
+        <element name="clones">
+          <attribute name='id'>
+            <ref name="url"/>
+          </attribute>
+        </element>
+      </optional>
+    </interleave>
+  </define>
+
+  <define name='devices-rel'>
+    <element name='devices'>
+      <zeroOrMore>
+        <element name='device'>
+          <attribute name='id'>
+            <ref name='url'/>
+          </attribute>
+          <optional>
+            <element name='driver'>
+              <text/>
+            </element>
+          </optional>
+        </element>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name='resource-attr'>
+    <interleave>
+      <optional>
+        <element name='cpu'>
+          <ref name='num'/>
+        </element>
+      </optional>
+      <optional>
+        <element name='n-cpus'>
+          <ref name='num'/>
+        </element>
+      </optional>
+      <optional>
+        <element name='ram'>
+          <ref name='num'/>
+        </element>
+      </optional>
+      <optional>
+        <element name='storage'>
+          <ref name='num'/>
+        </element>
+      </optional>
+    </interleave>
+  </define>
+
+  <define name='resources'>
+    <element name='resources'>
+      <attribute name='arch'>
+        <text/>
+      </attribute>
+      <interleave>
+        <optional>
+          <element name='minimum'>
+            <ref name='resource-attr'/>
+          </element>
+        </optional>
+        <optional>
+          <element name='recommended'>
+            <ref name='resource-attr'/>
+          </element>
+        </optional>
+      </interleave>
+    </element>
+  </define>
+
+  <define name='iso'>
+    <element name='iso'>
+      <interleave>
+        <optional>
+          <element name='volume-id'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <element name='publisher-id'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <element name='application-id'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <element name='system-id'>
+            <text/>
+          </element>
+        </optional>
+        <zeroOrMore>
+          <ref name='media-lang'/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+
+  <define name='media'>
+    <element name='media'>
+      <attribute name='arch'>
+        <text/>
+      </attribute>
+      <optional>
+        <attribute name="live">
+          <ref name='bool'/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="installer">
+          <ref name='bool'/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name='installer-reboots'>
+          <ref name='num'/>
+        </attribute>
+      </optional>
+      <optional>
+        <element name='url'>
+          <ref name='url'/>
+        </element>
+      </optional>
+      <optional>
+        <ref name='iso'/>
+      </optional>
+      <interleave>
+        <optional>
+          <element name='initrd'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <element name='kernel'>
+            <text/>
+          </element>
+        </optional>
+      </interleave>
+    </element>
+  </define>
+
+  <define name='media-lang'>
+    <element name='l10n-language'>
+      <optional>
+        <attribute name="regex">
+          <ref name='bool'/>
+        </attribute>
+      </optional>
+      <optional>
+        <attribute name="l10n-language-map">
+          <ref name='url'/>
+        </attribute>
+      </optional>
+      <text/>
+    </element>
+  </define>
+
+  <define name='treeinfo'>
+    <element name='treeinfo'>
+      <interleave>
+        <optional>
+          <element name='family'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <element name='variant'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <element name='version'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <element name='arch'>
+            <text/>
+          </element>
+        </optional>
+      </interleave>
+    </element>
+  </define>
+
+  <define name='tree'>
+    <element name='tree'>
+      <attribute name='arch'>
+        <text/>
+      </attribute>
+      <optional>
+        <element name='url'>
+          <ref name='url'/>
+        </element>
+      </optional>
+      <optional>
+        <ref name='treeinfo'/>
+      </optional>
+      <interleave>
+        <optional>
+          <element name='initrd'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <element name='kernel'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <element name='boot-iso'>
+            <text/>
+          </element>
+        </optional>
+      </interleave>
+    </element>
+  </define>
+
+  <define name='installer'>
+    <element name='installer'>
+      <zeroOrMore>
+        <element name="script">
+          <attribute name='id'>
+            <ref name='url'/>
+          </attribute>
+        </element>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name='driver'>
+    <element name='driver'>
+      <attribute name='arch'>
+        <text/>
+      </attribute>
+      <attribute name='location'>
+        <text/>
+      </attribute>
+      <optional>
+        <attribute name="pre-installable">
+          <ref name='bool'/>
+        </attribute>
+      </optional>
+      <zeroOrMore>
+        <element name='file'>
+          <text/>
+        </element>
+      </zeroOrMore>
+      <oneOrMore>
+        <element name='device'>
+          <attribute name='id'>
+            <ref name='url'/>
+          </attribute>
+        </element>
+      </oneOrMore>
+    </element>
+  </define>
+
+  <define name='os'>
+    <element name='os'>
+      <interleave>
+        <ref name='product-attr'/>
+        <ref name='product-content'/>
+        <ref name='product-dates'/>
+        <ref name='product-rel'/>
+        <optional>
+          <ref name='devices-rel'/>
+        </optional>
+        <zeroOrMore>
+          <ref name='resources'/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name='media'/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name='tree'/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name='installer'/>
+        </zeroOrMore>
+        <zeroOrMore>
+          <ref name='driver'/>
+        </zeroOrMore>
+      </interleave>
+    </element>
+  </define>
+
+  <define name='platform'>
+    <element name='platform'>
+      <interleave>
+        <ref name='product-attr'/>
+        <ref name='product-content'/>
+        <ref name='product-dates'/>
+        <ref name='product-rel'/>
+        <optional>
+          <ref name='devices-rel'/>
+        </optional>
+      </interleave>
+    </element>
+  </define>
+
+  <define name='deployment'>
+    <element name='deployment'>
+      <attribute name='id'>
+        <ref name='url'/>
+      </attribute>
+      <interleave>
+        <element name='os'>
+          <attribute name='id'>
+            <ref name='url'/>
+          </attribute>
+        </element>
+        <element name='platform'>
+          <attribute name='id'>
+            <ref name='url'/>
+          </attribute>
+        </element>
+        <ref name='devices-rel'/>
+      </interleave>
+    </element>
+  </define>
+
+  <define name='install-script'>
+    <element name='install-script'>
+      <interleave>
+        <element name='profile'>
+          <text/>
+        </element>
+        <optional>
+          <element name='path-format'>
+            <ref name='path-formats'/>
+          </element>
+        </optional>
+        <optional>
+          <element name='expected-filename'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <ref name='avatar-format'/>
+        </optional>
+        <optional>
+          <element name='config'>
+            <oneOrMore>
+              <element name='param'>
+                <attribute name="name"/>
+                <attribute name="policy">
+                  <ref name='policies'/>
+                </attribute>
+                <optional>
+                  <attribute name="value-map"/>
+                </optional>
+              </element>
+            </oneOrMore>
+          </element>
+        </optional>
+        <optional>
+          <element name='product-key-format'>
+            <text/>
+          </element>
+        </optional>
+        <optional>
+          <element name='can-pre-install-drivers'>
+            <ref name='bool'/>
+          </element>
+        </optional>
+        <optional>
+          <element name='can-post-install-drivers'>
+            <ref name='bool'/>
+          </element>
+        </optional>
+        <element name='template'>
+          <choice>
+            <group>
+              <attribute name="uri"/>
+              <empty/>
+            </group>
+            <ref name="customElement"/>
+          </choice>
+        </element>
+        <ref name='product-attr'/>
+        <ref name='product-rel'/>
+      </interleave>
+    </element>
+  </define>
+
+  <define name='avatar-format'>
+    <element name='avatar-format'>
+      <interleave>
+        <oneOrMore>
+          <element name="mime-type">
+            <text/>
+          </element>
+        </oneOrMore>
+        <optional>
+          <element name="width">
+            <ref name='num'/>
+          </element>
+        </optional>
+        <optional>
+          <element name="height">
+            <ref name='num'/>
+          </element>
+        </optional>
+        <optional>
+          <element name="alpha">
+            <ref name='bool'/>
+          </element>
+        </optional>
+      </interleave>
+    </element>
+  </define>
+
+  <define name="customElement">
+    <element>
+      <anyName/>
+      <zeroOrMore>
+        <choice>
+          <attribute>
+            <anyName/>
+          </attribute>
+          <text/>
+          <ref name="customElement"/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+
+  <define name='date'>
+    <data type="string">
+      <param name="pattern">[0-9]{4}-[0-9]{2}-[0-9]{2}</param>
+    </data>
+  </define>
+
+  <define name='hexid'>
+    <data type="string">
+      <param name="pattern">[0-9a-fA-F]+</param>
+    </data>
+  </define>
+
+  <define name='bool'>
+    <data type='string'>
+      <param name='pattern'>true|false</param>
+    </data>
+  </define>
+
+  <define name='num'>
+    <data type="string">
+      <param name="pattern">[0-9]+</param>
+    </data>
+  </define>
+
+  <define name='url'>
+    <data type="string">
+      <param name="pattern">\w+://.*</param>
+    </data>
+  </define>
+
+  <define name='policies'>
+    <data type="string">
+      <param name="pattern">required|optional</param>
+    </data>
+  </define>
+
+  <define name='path-formats'>
+    <data type="string">
+      <param name="pattern">dos|unix</param>
+    </data>
+  </define>
+</grammar>

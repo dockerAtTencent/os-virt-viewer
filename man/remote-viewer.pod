@@ -1,0 +1,104 @@
+
+=head1 NAME
+
+remote-viewer - a simple remote desktop client
+
+=head1 SYNOPSIS
+
+B<remote-viewer> [OPTIONS] -- [URI]
+
+=head1 DESCRIPTION
+
+B<remote-viewer> is a simple remote display client. The supported
+protocols are SPICE and VNC.
+
+Starting remote-viewer without URI will open a simple dialog with an
+entry and a list of previously successfully access URI.
+
+=head1 OPTIONS
+
+The following options are accepted when running C<remote-viewer>:
+
+=over 4
+
+=item -h, --help
+
+Display command line help summary
+
+=item -V, --version
+
+Display program version number
+
+=item -v, --verbose
+
+Display information about the connection
+
+=item -z PCT, --zoom=PCT
+
+Zoom level of the display window in percentage. Range 10-200.
+
+=item -f, --full-screen=<auto-conf>
+
+Start with the windows maximized to fullscreen.
+
+If the argument 'auto-conf' is given, the remote display will be
+reconfigured to match at best the client physical monitor configuration
+on initialization, by enabling or disabling extra monitors as
+necessary. This is currently implemented by the Spice backend only.
+
+=item -t TITLE, --title TITLE
+
+Set the window title to B<TITLE>
+
+=item --spice-controller
+
+Use the SPICE controller to initialize the connection with the SPICE
+server. This option is used by the SPICE browser addons to allow web
+page to start a client.
+
+=item --debug
+
+Print debugging information
+
+=item -H HOTKEYS, --hotkeys HOTKEYS
+
+Override the default hotkey bindings with B<HOTKEYS>. Where B<HOTKEYS> is
+<action1>=<key1>[+<key2>][,<action2>=<key3>[+<key4>]]. Key-names are
+case-insensitive, valid actions are: toggle-fullscreen, release-cursor,
+smartcard-insert and smartcard-remove. Examples:
+
+  --hotkeys=toggle-fullscreen=shift+f11,release-cursor=shift+f12
+
+  --hotkeys=release-cursor=ctrl+alt
+
+Note that hotkeys for which no binding is given are disabled, specifying an
+empty string disables all hotkeys.
+
+=back
+
+=head1 EXAMPLES
+
+To connect to SPICE server on host "makai" with port 5900
+
+   remote-viewer spice://makai:5900
+
+To connect to VNC server on host "tsingy" with port 5900
+
+   remote-viewer vnc://tsingy:5900
+
+=head1 BUGS
+
+Report bugs to the mailing list C<http://www.redhat.com/mailman/listinfo/virt-tools-list>
+
+=head1 COPYRIGHT
+
+Copyright (C) 2012 Red Hat, Inc., and various contributors.
+This is free software. You may redistribute copies of it under the terms of the GNU General
+Public License C<http://www.gnu.org/licenses/gpl.html>. There is NO WARRANTY, to the extent
+permitted by law.
+
+=head1 SEE ALSO
+
+C<virt-viewer(1)>, the project website C<http://virt-manager.org>
+
+=cut

@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://fedoraproject.org/fedora/1">
+    <short-id>fedora1</short-id>
+    <name>Fedora Core 1</name>
+    <name xml:lang="pl">Fedora Core 1</name>
+    <name xml:lang="uk">Fedora Core 1</name>
+    <version>1</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Yarrow</codename>
+    <upgrades id="http://redhat.com/rhl/9"/>
+    <derives-from id="http://redhat.com/rhl/9"/>
+
+    <release-date>2003-11-05</release-date>
+    <eol-date>2004-09-20</eol-date>
+
+    
+
+    <devices>
+      <device id="http://pciids.sourceforge.net/v2.2/pci.ids/1b36/0100"/> 
+      <device id="http://pciids.sourceforge.net/v2.2/pci.ids/8086/2415"/> 
+    </devices>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/1/i386/iso/yarrow-i386-disc1.iso</url>
+      <iso>
+        <application-id>FC/1 i386</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/1/x86_64/iso/yarrow-x86_64-disc1.iso</url>
+      <iso>
+        <application-id>FC/1 x86_64</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/1/i386/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/1/x86_64/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/2">
+    <short-id>fedora2</short-id>
+    <name>Fedora Core 2</name>
+    <name xml:lang="pl">Fedora Core 2</name>
+    <name xml:lang="uk">Fedora Core 2</name>
+    <version>2</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Tettnang</codename>
+    <upgrades id="http://fedoraproject.org/fedora/1"/>
+    <derives-from id="http://fedoraproject.org/fedora/1"/>
+
+    <release-date>2004-05-18</release-date>
+    <eol-date>2005-04-11</eol-date>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/2/i386/iso/FC2-i386-disc1.iso</url>
+      <iso>
+        <application-id>FC/2 i386</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/2/x86_64/iso/FC2-x86_64-disc1.iso</url>
+      <iso>
+        <application-id>FC/2 x86_64</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/2/i386/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/2/x86_64/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/3">
+    <short-id>fedora3</short-id>
+    <name>Fedora Core 3</name>
+    <name xml:lang="pl">Fedora Core 3</name>
+    <name xml:lang="uk">Fedora Core 3</name>
+    <version>3</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Heidelberg</codename>
+    <upgrades id="http://fedoraproject.org/fedora/2"/>
+    <derives-from id="http://fedoraproject.org/fedora/2"/>
+
+    <release-date>2004-11-08</release-date>
+    <eol-date>2006-01-16</eol-date>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/3/i386/iso/FC3-i386-disc1.iso</url>
+      <iso>
+        <application-id>FC/3 i386</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/3/x86_64/iso/FC3-x86_64-disc1.iso</url>
+      <iso>
+        <application-id>FC/3 x86_64</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/3/i386/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/3/x86_64/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/4">
+    <short-id>fedora4</short-id>
+    <name>Fedora Core 4</name>
+    <name xml:lang="pl">Fedora Core 4</name>
+    <name xml:lang="uk">Fedora Core 4</name>
+    <version>4</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Stentz</codename>
+    <upgrades id="http://fedoraproject.org/fedora/3"/>
+    <derives-from id="http://fedoraproject.org/fedora/3"/>
+
+    <release-date>2005-06-13</release-date>
+    <eol-date>2006-08-07</eol-date>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/4/i386/iso/FC4-i386-disc1.iso</url>
+      <iso>
+        <application-id>FC/4 i386</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/4/x86_64/iso/FC4-x86_64-disc1.iso</url>
+      <iso>
+        <application-id>FC/4 x86_64</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="ppc">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/4/ppc/iso/FC4-ppc-disc1.iso</url>
+      <iso>
+        <application-id>FC/4 ppc</application-id>
+        <system-id>PPC|LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/4/i386/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/4/x86_64/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/5">
+    <short-id>fedora5</short-id>
+    <name>Fedora Core 5</name>
+    <name xml:lang="pl">Fedora Core 5</name>
+    <name xml:lang="uk">Fedora Core 5</name>
+    <version>5</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Bordeaux</codename>
+    <upgrades id="http://fedoraproject.org/fedora/4"/>
+    <derives-from id="http://fedoraproject.org/fedora/4"/>
+
+    <release-date>2006-03-20</release-date>
+    <eol-date>2007-07-02</eol-date>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/5/i386/iso/FC-5-i386-disc1.iso</url>
+      <iso>
+        <application-id>FC/5 i386</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/5/x86_64/iso/FC-5-x86_64-disc1.iso</url>
+      <iso>
+        <application-id>FC/5 x86_64</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="ppc">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/5/ppc/iso/FC-5-ppc-disc1.iso</url>
+      <iso>
+        <application-id>FC/5 ppc</application-id>
+        <system-id>PPC|LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/5/i386/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/5/x86_64/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/6">
+    <short-id>fedora6</short-id>
+    <name>Fedora Core 6</name>
+    <name xml:lang="pl">Fedora Core 6</name>
+    <name xml:lang="uk">Fedora Core 6</name>
+    <version>6</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Zod</codename>
+    <upgrades id="http://fedoraproject.org/fedora/5"/>
+    <derives-from id="http://fedoraproject.org/fedora/5"/>
+
+    <release-date>2006-10-24</release-date>
+    <eol-date>2007-12-07</eol-date>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/6/i386/iso/FC-6-i386-disc1.iso</url>
+      <iso>
+        <application-id>FC(-|/)6 i386</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/6/x86_64/iso/FC-6-x86_64-disc1.iso</url>
+      <iso>
+        <application-id>FC(-|/)6 x86_64</application-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="ppc">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/6/ppc/iso/FC-6-ppc-disc1.iso</url>
+      <iso>
+        <application-id>FC(-|/)6 ppc</application-id>
+        <system-id>PPC|LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/6/i386/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/core/6/x86_64/os/</url>
+      <kernel>images/pxeboot/vmlinuz</kernel>
+      <initrd>images/pxeboot/initrd.img</initrd>
+      <boot-iso>images/boot.iso</boot-iso>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/7">
+    <short-id>fedora7</short-id>
+    <name>Fedora 7</name>
+    <name xml:lang="pl">Fedora 7</name>
+    <name xml:lang="uk">Fedora 7</name>
+    <version>7</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Moonshine</codename>
+    <upgrades id="http://fedoraproject.org/fedora/6"/>
+    <derives-from id="http://fedoraproject.org/fedora/6"/>
+
+    <release-date>2007-05-31</release-date>
+    <eol-date>2008-06-13</eol-date>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/7/Fedora/i386/iso/F-7-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 7 i386 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/7/Fedora/x86_64/iso/F-7-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 7 x86_64 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="ppc">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/7/Fedora/ppc/iso/F-7-ppc-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 7 ppc (DVD|Disc)</volume-id>
+        <system-id>PPC</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <media live="true" arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/7/Live/i386/Fedora-7-Live-i686.iso</url>
+      <iso>
+        <volume-id>Fedora-7-(KDE-)?Live-i386</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/7/Live/x86_64/Fedora-7-Live-x86_64.iso</url>
+      <iso>
+        <volume-id>Fedora-7-(KDE-)?Live-x86_64</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/7/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>7</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/7/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>7</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/8">
+    <short-id>fedora8</short-id>
+    <name>Fedora 8</name>
+    <name xml:lang="pl">Fedora 8</name>
+    <name xml:lang="uk">Fedora 8</name>
+    <version>8</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Werewolf</codename>
+    <upgrades id="http://fedoraproject.org/fedora/7"/>
+    <derives-from id="http://fedoraproject.org/fedora/7"/>
+
+    <release-date>2007-11-08</release-date>
+    <eol-date>2009-01-07</eol-date>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/8/Fedora/i386/iso/Fedora-8-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 8 i386 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/8/Fedora/x86_64/iso/Fedora-8-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 8 x86_64 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="ppc">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/8/Fedora/ppc/iso/Fedora-8-ppc-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 8 ppc (DVD|Disc)</volume-id>
+        <system-id>PPC</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <media live="true" arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/8/Live/i686/Fedora-8-Live-i686.iso</url>
+      <iso>
+        <volume-id>Fedora-8-Live-(KDE-)?i686</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/8/Live/x86_64/Fedora-8-Live-x86_64.iso</url>
+      <iso>
+        <volume-id>Fedora-8-Live-(KDE-)?x86_64</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="ppc">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/8/Live/ppc/Fedora-8-Live-ppc.iso</url>
+      <iso>
+        <volume-id>Fedora-8-Live-(KDE-)?ppc</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/8/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>8</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/8/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>8</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/9">
+    <short-id>fedora9</short-id>
+    <name>Fedora 9</name>
+    <name xml:lang="pl">Fedora 9</name>
+    <name xml:lang="uk">Fedora 9</name>
+    <version>9</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Sulphur</codename>
+    <upgrades id="http://fedoraproject.org/fedora/8"/>
+    <derives-from id="http://fedoraproject.org/fedora/8"/>
+
+    <release-date>2008-05-13</release-date>
+    <eol-date>2009-07-10</eol-date>
+
+    <devices>
+      <device id="http://pciids.sourceforge.net/v2.2/pci.ids/1af4/1000"/> 
+      
+    </devices>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/9/Fedora/i386/iso/Fedora-9-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 9 i386 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/9/Fedora/x86_64/iso/Fedora-9-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 9 x86_64 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="ppc">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/9/Fedora/ppc/iso/Fedora-9-ppc-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 9 ppc (DVD|Disc)</volume-id>
+        <system-id>PPC|LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <media live="true" arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/9/Live/i686/Fedora-9-i686-Live.iso</url>
+      <iso>
+        <volume-id>Fedora-9-Live-(KDE-)?i686</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/9/Live/x86_64/Fedora-9-x86_64-Live.iso</url>
+      <iso>
+        <volume-id>Fedora-9-Live-(KDE-)?x86_64</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/9/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>9</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/9/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>9</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/10">
+    <short-id>fedora10</short-id>
+    <name>Fedora 10</name>
+    <name xml:lang="pl">Fedora 10</name>
+    <name xml:lang="uk">Fedora 10</name>
+    <version>10</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Cambridge</codename>
+    <upgrades id="http://fedoraproject.org/fedora/9"/>
+    <derives-from id="http://fedoraproject.org/fedora/9"/>
+
+    <release-date>2008-11-25</release-date>
+    <eol-date>2009-12-18</eol-date>
+
+    <devices>
+      <device id="http://pciids.sourceforge.net/v2.2/pci.ids/1af4/1001"/> 
+    </devices>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/10/Fedora/i386/iso/Fedora-10-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 10 i386 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/10/Fedora/x86_64/iso/Fedora-10-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 10 x86_64 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="ppc">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/10/Fedora/ppc/iso/Fedora-10-ppc-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 10 ppc (DVD|Disc)</volume-id>
+        <system-id>PPC|LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+
+    <media live="true" arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/10/Live/i686/F10-i686-Live.iso</url>
+      <iso>
+        <volume-id>F10-i686-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/10/Live/x86_64/F10-x86_64-Live.iso</url>
+      <iso>
+        <volume-id>F10-x86_64-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/10/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>10</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/10/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>10</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/11">
+    <short-id>fedora11</short-id>
+    <name>Fedora 11</name>
+    <name xml:lang="pl">Fedora 11</name>
+    <name xml:lang="uk">Fedora 11</name>
+    <version>11</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Leonidas</codename>
+    <upgrades id="http://fedoraproject.org/fedora/10"/>
+    <derives-from id="http://fedoraproject.org/fedora/10"/>
+
+    <release-date>2009-06-09</release-date>
+    <eol-date>2010-06-25</eol-date>
+
+    <devices>
+      <device id="http://www.linux-usb.org/usb.ids/80ee/0021"/> 
+    </devices>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/11/Fedora/i386/iso/Fedora-11-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 11 i386 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/11/Fedora/x86_64/iso/Fedora-11-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 11 x86_64 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="ppc">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/11/Fedora/ppc/iso/Fedora-11-ppc-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 11 ppc (DVD|Disc)</volume-id>
+        <system-id>PPC|LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+
+    <media live="true" arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/11/Live/i686/Fedora-11-i686-Live.iso</url>
+      <iso>
+        <volume-id>Fedora-11-i686-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/11/Live/x86_64/Fedora-11-x86_64-Live.iso</url>
+      <iso>
+        <volume-id>Fedora-11-x86_64-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/11/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>11</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/11/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>11</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/12">
+    <short-id>fedora12</short-id>
+    <name>Fedora 12</name>
+    <name xml:lang="pl">Fedora 12</name>
+    <name xml:lang="uk">Fedora 12</name>
+    <version>12</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Constantine</codename>
+    <upgrades id="http://fedoraproject.org/fedora/11"/>
+    <derives-from id="http://fedoraproject.org/fedora/11"/>
+
+    <release-date>2009-11-17</release-date>
+    <eol-date>2010-12-02</eol-date>
+
+    <media arch="i386">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/12/Fedora/i386/iso/Fedora-12-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 12 i386 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/12/Fedora/x86_64/iso/Fedora-12-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 12 x86_64 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="ppc">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/12/Fedora/ppc/iso/Fedora-12-ppc-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 12 ppc (DVD|Disc)</volume-id>
+        <system-id>PPC|LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <media live="true" arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/12/Live/i686/Fedora-12-i686-Live.iso</url>
+      <iso>
+        <volume-id>Fedora-12-i686-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/12/Live/x86_64/Fedora-12-x86_64-Live.iso</url>
+      <iso>
+        <volume-id>Fedora-12-x86_64-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/12/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>12</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/12/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>12</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/13">
+    <short-id>fedora13</short-id>
+    <name>Fedora 13</name>
+    <name xml:lang="pl">Fedora 13</name>
+    <name xml:lang="uk">Fedora 13</name>
+    <version>13</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Goddard</codename>
+    <upgrades id="http://fedoraproject.org/fedora/12"/>
+    <derives-from id="http://fedoraproject.org/fedora/12"/>
+
+    <release-date>2010-05-25</release-date>
+    <eol-date>2011-06-04</eol-date>
+
+    <media arch="i386">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/i386/iso/Fedora-13-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 13 i386 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/x86_64/iso/Fedora-13-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 13 x86_64 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <media live="true" arch="i686">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/13/Live/i686/Fedora-13-i686-Live.iso</url>
+      <iso>
+        <volume-id>Fedora-13-i686-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://archive.fedoraproject.org/pub/archive/fedora/linux/releases/13/Live/x86_64/Fedora-13-x86_64-Live.iso</url>
+      <iso>
+        <volume-id>Fedora-13-x86_64-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>13</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/13/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>13</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/14">
+    <short-id>fedora14</short-id>
+    <name>Fedora 14</name>
+    <name xml:lang="pl">Fedora 14</name>
+    <name xml:lang="uk">Fedora 14</name>
+    <version>14</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Laughlin</codename>
+    <upgrades id="http://fedoraproject.org/fedora/13"/>
+    <derives-from id="http://fedoraproject.org/fedora/13"/>
+
+    <release-date>2010-11-02</release-date>
+    <eol-date>2011-12-08</eol-date>
+
+    <media arch="i386">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/14/Fedora/i386/iso/Fedora-14-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 14 i386 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/14/Fedora/x86_64/iso/Fedora-14-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 14 x86_64 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <media live="true" arch="i686">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/14/Live/i686/Fedora-14-i686-Live-Desktop.iso</url>
+      <iso>
+        <volume-id>Fedora-14-i686-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/14/Live/x86_64/Fedora-14-x86_64-Live-Desktop.iso</url>
+      <iso>
+        <volume-id>Fedora-14-x86_64-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/14/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>14</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/14/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>14</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <resources arch="all">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <ram>402653184</ram>
+      </minimum>
+
+      <recommended>
+        <cpu>400000000</cpu>
+        <ram>536870912</ram>
+        <storage>9663676416</storage>
+      </recommended>
+    </resources>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+      <script id='http://fedoraproject.org/scripts/fedora/desktop'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/15">
+    <short-id>fedora15</short-id>
+    <name>Fedora 15</name>
+    <name xml:lang="pl">Fedora 15</name>
+    <name xml:lang="uk">Fedora 15</name>
+    <version>15</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Lovelock</codename>
+    <upgrades id="http://fedoraproject.org/fedora/14"/>
+    <derives-from id="http://fedoraproject.org/fedora/14"/>
+
+    <release-date>2011-05-24</release-date>
+
+    <media arch="i386">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/15/Fedora/i386/iso/Fedora-15-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 15 i386 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/15/Fedora/x86_64/iso/Fedora-15-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 15 x86_64 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <media live="true" arch="i686">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/15/Live/i686/Fedora-15-i686-Live-Desktop.iso</url>
+      <iso>
+        <volume-id>Fedora-15-i686-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/15/Live/x86_64/Fedora-15-x86_64-Live-Desktop.iso</url>
+      <iso>
+        <volume-id>Fedora-15-x86_64-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/15/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>15</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/15/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>15</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <resources arch="all">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <ram>671088640</ram>
+      </minimum>
+
+      <recommended>
+        <cpu>400000000</cpu>
+        <ram>1207959552</ram>
+        <storage>9663676416</storage>
+      </recommended>
+    </resources>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+      <script id='http://fedoraproject.org/scripts/fedora/desktop'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/16">
+    <short-id>fedora16</short-id>
+    <name>Fedora 16</name>
+    <name xml:lang="pl">Fedora 16</name>
+    <name xml:lang="uk">Fedora 16</name>
+    <version>16</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Verne</codename>
+    <upgrades id="http://fedoraproject.org/fedora/15"/>
+    <derives-from id="http://fedoraproject.org/fedora/15"/>
+
+    <release-date>2011-11-08</release-date>
+
+    <media arch="i386">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/16/Fedora/i386/iso/Fedora-16-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 16 i386 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/16/Fedora/x86_64/iso/Fedora-16-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 16 x86_64 (DVD|Disc)</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <media live="true" arch="i686">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/16/Live/i686/Fedora-16-i686-Live-Desktop.iso</url>
+      <iso>
+        <volume-id>Fedora-16-i686-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/16/Live/x86_64/Fedora-16-x86_64-Live-Desktop.iso</url>
+      <iso>
+        <volume-id>Fedora-16-x86_64-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/16/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>16</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/16/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>16</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <resources arch="all">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <ram>805306368</ram>
+      </minimum>
+
+      <recommended>
+        <cpu>400000000</cpu>
+        <ram>1207959552</ram>
+        <storage>9663676416</storage>
+      </recommended>
+    </resources>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+      <script id='http://fedoraproject.org/scripts/fedora/desktop'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/17">
+    <short-id>fedora17</short-id>
+    <name>Fedora 17</name>
+    <name xml:lang="pl">Fedora 17</name>
+    <name xml:lang="uk">Fedora 17</name>
+    <version>17</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>Beefy Miracle</codename>
+    <upgrades id="http://fedoraproject.org/fedora/16"/>
+    <derives-from id="http://fedoraproject.org/fedora/16"/>
+
+    <media arch="i386">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/17/Fedora/i386/iso/Fedora-17-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 17.* i386</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/17/Fedora/x86_64/iso/Fedora-17-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 17.* x86_64</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <media live="true" arch="i686">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/17/Live/i686/Fedora-17-i686-Live-Desktop.iso</url>
+      <iso>
+        <volume-id>Fedora-17.*-i686-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/17/Live/x86_64/Fedora-17-x86_64-Live-Desktop.iso</url>
+      <iso>
+        <volume-id>Fedora-17.*-x86_64-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/17/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>17</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/17/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>17</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <resources arch="all">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <ram>805306368</ram>
+      </minimum>
+
+      <recommended>
+        <cpu>400000000</cpu>
+        <ram>1207959552</ram>
+        <storage>9663676416</storage>
+      </recommended>
+    </resources>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+      <script id='http://fedoraproject.org/scripts/fedora/desktop'/>
+    </installer>
+  </os>
+
+  <os id="http://fedoraproject.org/fedora/18">
+    <short-id>fedora18</short-id>
+    <name>Fedora 18</name>
+    <name xml:lang="pl">Fedora 18</name>
+    <name xml:lang="uk">Fedora 18</name>
+    <version>18</version>
+    <vendor>Fedora Project</vendor>
+    <vendor xml:lang="pl">Projekt Fedora</vendor>
+    <vendor xml:lang="uk">Проект Fedora</vendor>
+    <family>linux</family>
+    <distro>fedora</distro>
+    <codename>The Spherical Cow</codename>
+    <upgrades id="http://fedoraproject.org/fedora/17"/>
+    <derives-from id="http://fedoraproject.org/fedora/17"/>
+
+    <media arch="i386">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/18/Fedora/i386/iso/Fedora-18-i386-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 18.* i386</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+    <media arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/18/Fedora/x86_64/iso/Fedora-18-x86_64-DVD.iso</url>
+      <iso>
+        <volume-id>Fedora 18.* x86_64</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz</kernel>
+      <initrd>isolinux/initrd.img</initrd>
+    </media>
+
+    <media live="true" arch="i686">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/18/Live/i686/Fedora-18-i686-Live-Desktop.iso</url>
+      <iso>
+        <volume-id>Fedora-18.*-i686-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+    <media live="true" arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/18/Live/x86_64/Fedora-18-x86_64-Live-Desktop.iso</url>
+      <iso>
+        <volume-id>Fedora-18.*-x86_64-Live(-KDE)?</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <tree arch="i686">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/18/Fedora/i386/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>18</version>
+	<arch>i386</arch>
+      </treeinfo>
+    </tree>
+    <tree arch="x86_64">
+      <url>http://download.fedoraproject.org/pub/fedora/linux/releases/18/Fedora/x86_64/os/</url>
+      <treeinfo>
+	<family>Fedora</family>
+	<version>18</version>
+	<arch>x86_64</arch>
+      </treeinfo>
+    </tree>
+
+    <resources arch="all">
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <ram>805306368</ram>
+      </minimum>
+
+      <recommended>
+        <cpu>400000000</cpu>
+        <ram>1207959552</ram>
+        <storage>9663676416</storage>
+      </recommended>
+    </resources>
+
+    <installer>
+      <script id='http://fedoraproject.org/scripts/fedora/jeos'/>
+      <script id='http://fedoraproject.org/scripts/fedora/desktop'/>
+    </installer>
+  </os>
+
+</libosinfo>

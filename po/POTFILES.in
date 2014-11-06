@@ -1,0 +1,15 @@
+data/remote-viewer.desktop.in
+data/virt-viewer-mime.xml.in
+src/gbinding.c
+src/remote-viewer-main.c
+src/remote-viewer.c
+[type: gettext/glade] src/virt-viewer-about.xml
+src/virt-viewer-app.c
+[type: gettext/glade] src/virt-viewer-auth.xml
+src/virt-viewer-main.c
+src/virt-viewer-session-spice.c
+src/virt-viewer-session-vnc.c
+src/virt-viewer-window.c
+src/virt-viewer-file.c
+src/virt-viewer.c
+[type: gettext/glade] src/virt-viewer.xml

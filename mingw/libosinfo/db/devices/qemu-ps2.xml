@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <device id="http://qemu.org/ps2/keyboard">
+    <name>keyboard</name>
+    <bus-type>ps2</bus-type>
+    <class>input</class>
+    <vendor>Qemu/KVM</vendor>
+    <vendor xml:lang="pl">Qemu/KVM</vendor>
+    <vendor xml:lang="uk">Qemu/KVM</vendor>
+    <product>Keyboard</product>
+  </device>
+
+  <device id="http://qemu.org/ps2/mouse">
+    <name>mouse</name>
+    <bus-type>ps2</bus-type>
+    <class>input</class>
+    <vendor>Qemu/KVM</vendor>
+    <vendor xml:lang="pl">Qemu/KVM</vendor>
+    <vendor xml:lang="uk">Qemu/KVM</vendor>
+    <product>Mouse</product>
+  </device>
+
+</libosinfo>

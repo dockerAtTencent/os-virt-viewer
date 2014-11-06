@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libosinfo version="0.0.1">
+
+  <os id="http://gnome.org/3.6">
+    <short-id>gnome3.6</short-id>
+    <name>GNOME 3.6</name>
+    <name xml:lang="pl">GNOME 3.6</name>
+    <name xml:lang="uk">GNOME 3.6</name>
+    <version>3.6</version>
+    <vendor>GNOME Project</vendor>
+    <vendor xml:lang="pl">Projekt GNOME</vendor>
+    <vendor xml:lang="uk">Проект GNOME</vendor>
+    <family>linux</family>
+    <distro>gnome</distro>
+    <derives-from id="http://fedoraproject.org/fedora/18"/>
+
+    <media live="true" arch="i686">
+      <url>http://ftp.gnome.org/pub/gnome/misc/promo-usb/GNOME-3.6.0.iso</url>
+      <iso>
+        <volume-id>GNOME36-LiveCD</volume-id>
+        <system-id>LINUX</system-id>
+      </iso>
+      <kernel>isolinux/vmlinuz0</kernel>
+      <initrd>isolinux/initrd0.img</initrd>
+    </media>
+
+    <resources arch="all">
+      
+      <minimum>
+        <n-cpus>1</n-cpus>
+        <ram>805306368</ram>
+      </minimum>
+    </resources>
+  </os>
+
+</libosinfo>

@@ -1,0 +1,134 @@
+
+=head1 NAME
+
+virt-viewer - display the graphical console for a virtual machine
+
+=head1 SYNOPSIS
+
+B<virt-viewer> [OPTIONS] -- DOMAIN-NAME|ID|UUID
+
+=head1 DESCRIPTION
+
+B<virt-viewer> is a minimal tool for displaying the graphical console
+of a virtual machine. The console is accessed using the VNC or SPICE
+protocol. The guest can be referred to based on its name, ID, or
+UUID. If the guest is not already running, then the viewer can be told
+to wait until is starts before attempting to connect to the console
+The viewer can connect to remote hosts to lookup the console
+information and then also connect to the remote console using the same
+network transport.
+
+=head1 OPTIONS
+
+The following options are accepted when running C<virt-viewer>:
+
+=over 4
+
+=item -h, --help
+
+Display command line help summary
+
+=item -V, --version
+
+Display program version number
+
+=item -v, --verbose
+
+Display information about the connection
+
+=item -c URI, --connect=URI
+
+Specify the hypervisor connection URI
+
+=item -w, --wait
+
+Wait for the domain to start up before attempting to connect to the console
+
+=item -r, --reconnect
+
+Automatically reconnect to the domain if it shuts down and restarts
+
+=item -z PCT, --zoom=PCT
+
+Zoom level of the display window in percentage. Range 10-200.
+
+=item -d, --direct
+
+Do not attempt to tunnel the console over SSH, even if the main connection URI
+used SSH.
+
+=item -a, --attach
+
+Use libvirt to directly attach to a local display, instead of making a
+TCP/UNIX socket connection. This avoids the need to authentication with
+the remote display, if authentication with libvirt is already allowed.
+This option does not work with remote displays.
+
+=item -f, --full-screen
+
+Start with the window maximised to fullscreen
+
+=item --debug
+
+Print debugging information
+
+=item -H HOTKEYS, --hotkeys HOTKEYS
+
+Override the default hotkey bindings with B<HOTKEYS>. Where B<HOTKEYS> is
+<action1>=<key1>[+<key2>][,<action2>=<key3>[+<key4>]]. Key-names are
+case-insensitive, valid actions are: toggle-fullscreen, release-cursor,
+smartcard-insert and smartcard-remove. Examples:
+
+  --hotkeys=toggle-fullscreen=shift+f11,release-cursor=shift+f12
+
+  --hotkeys=release-cursor=ctrl+alt
+
+Note that hotkeys for which no binding is given are disabled, specifying an
+empty string disables all hotkeys.
+
+=back
+
+=head1 EXAMPLES
+
+To connect to the guest called 'demo' running under Xen
+
+   virt-viewer demo
+
+To connect to the guest with ID 7 running under QEMU
+
+   virt-viewer --connect qemu:///system 7
+
+To wait for the guest with UUID 66ab33c0-6919-a3f7-e659-16c82d248521 to
+startup and then connect, also reconnecting upon restart of VM
+
+   virt-viewer --reconnect --wait 66ab33c0-6919-a3f7-e659-16c82d248521
+
+To connect to a remote console using TLS
+
+   virt-viewer --connect xen://example.org/ demo
+
+To connect to a remote host using SSH, lookup the guest config and
+then make a direct non-tunnelled connection of the console
+
+   virt-viewer --direct --connect xen+ssh://root@example.org/ demo
+
+=head1 AUTHOR
+
+Written by Daniel P. Berrange, based on the GTK-VNC example program gvncviewer.
+
+=head1 BUGS
+
+Report bugs to the mailing list C<http://www.redhat.com/mailman/listinfo/virt-tools-list>
+
+=head1 COPYRIGHT
+
+Copyright (C) 2007-2008 Red Hat, Inc., and various contributors.
+This is free software. You may redistribute copies of it under the terms of the GNU General
+Public License C<http://www.gnu.org/licenses/gpl.html>. There is NO WARRANTY, to the extent
+permitted by law.
+
+=head1 SEE ALSO
+
+C<virsh(1)>, C<virt-manager(1)>, the project website C<http://virt-manager.org>
+
+=cut

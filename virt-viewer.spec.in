@@ -1,0 +1,166 @@
+# -*- rpm-spec -*-
+
+# Default to skipping autoreconf.  Distros can change just this one line
+# (or provide a command-line override) if they backport any patches that
+# touch configure.ac or Makefile.am.
+%{!?enable_autotools:%define enable_autotools 0}
+
+%define with_gtk3 0
+%if 0%{?fedora} >= 15
+%define with_gtk3 1
+%endif
+
+%define with_spice 0
+%if 0%{?fedora} >= 17
+%define with_spice 1
+%endif
+
+%define with_govirt 0
+%if 0%{?fedora} >= 19
+%define with_govirt 1
+%endif
+
+%if 0%{?rhel} >= 6
+%define with_spice 1
+%endif
+
+# spice-gtk is x86 x86_64 arm only currently:
+%ifnarch %{ix86} x86_64 %{arm}
+%define with_spice 0
+%endif
+
+Name: @PACKAGE@
+Version: @VERSION@
+Release: 1%{?dist}%{?extra_release}
+Summary: Virtual Machine Viewer
+Group: Applications/System
+License: GPLv2+
+URL: http://virt-manager.org/
+Source0: http://virt-manager.org/download/sources/%{name}/%{name}-%{version}.tar.gz
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+Requires: openssh-clients
+Requires(post):   %{_sbindir}/update-alternatives
+Requires(postun): %{_sbindir}/update-alternatives
+Requires(post): desktop-file-utils
+Requires(postun): desktop-file-utils
+
+%if 0%{?enable_autotools}
+BuildRequires: autoconf
+BuildRequires: automake
+BuildRequires: gettext-devel
+BuildRequires: libtool
+%endif
+
+BuildRequires: glib2-devel >= 2.22
+%if %{with_gtk3}
+BuildRequires: gtk3-devel >= 3.0.0
+%else
+BuildRequires: gtk2-devel >= 2.12.0
+%endif
+BuildRequires: libvirt-devel >= 0.9.7
+BuildRequires: libxml2-devel
+%if %{with_gtk3}
+BuildRequires: gtk-vnc2-devel >= 0.4.0
+%else
+BuildRequires: gtk-vnc-devel >= 0.3.8
+%endif
+%if %{with_spice}
+%if %{with_gtk3}
+BuildRequires: spice-gtk3-devel >= 0.20
+%else
+BuildRequires: spice-gtk-devel >= 0.20
+%endif
+BuildRequires: spice-protocol >= 0.10.1
+%endif
+BuildRequires: /usr/bin/pod2man
+BuildRequires: intltool
+%if %{with_govirt}
+BuildRequires: libgovirt-devel >= 0.0.3
+%endif
+
+%if 0%{?fedora} >= 20
+Obsoletes: spice-client < 0.12.3-2
+%endif
+
+
+%description
+Virtual Machine Viewer provides a graphical console client for connecting
+to virtual machines. It uses the GTK-VNC or SPICE-GTK widgets to provide
+the display, and libvirt for looking up VNC/SPICE server details.
+
+%prep
+%setup -q
+
+%build
+
+%if 0%{?enable_autotools}
+autoreconf -if
+%endif
+
+%if %{with_spice}
+%define spice_arg --with-spice-gtk
+%else
+%define spice_arg --without-spice-gtk
+%endif
+
+%if %{with_gtk3}
+%define gtk_arg --with-gtk=3.0
+%else
+%define gtk_arg --with-gtk=2.0
+%endif
+
+%if %{with_govirt}
+%define govirt_arg --with-ovirt
+%endif
+
+%configure %{spice_arg} %{gtk_arg} %{govirt_arg} --with-buildid=-%{release}
+%__make %{?_smp_mflags}
+
+
+%install
+rm -rf $RPM_BUILD_ROOT
+%__make install  DESTDIR=$RPM_BUILD_ROOT
+mkdir -p %{buildroot}%{_libexecdir}
+touch %{buildroot}%{_libexecdir}/spice-xpi-client
+install -m 0755 data/spice-xpi-client-remote-viewer %{buildroot}%{_libexecdir}/
+%find_lang %{name}
+
+%clean
+rm -rf $RPM_BUILD_ROOT
+
+%post
+/bin/touch --no-create %{_datadir}/icons/hicolor &>/dev/null || :
+%{_sbindir}/update-alternatives --install %{_libexecdir}/spice-xpi-client \
+  spice-xpi-client %{_libexecdir}/spice-xpi-client-remote-viewer 25
+update-desktop-database -q %{_datadir}/applications
+
+%postun
+if [ $1 -eq 0 ] ; then
+  /bin/touch --no-create %{_datadir}/icons/hicolor &>/dev/null
+  /usr/bin/gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
+  %{_sbindir}/update-alternatives --remove spice-xpi-client %{_libexecdir}/spice-xpi-client-remote-viewer
+fi
+update-desktop-database -q %{_datadir}/applications
+
+%posttrans
+/usr/bin/gtk-update-icon-cache %{_datadir}/icons/hicolor &>/dev/null || :
+
+%files -f %{name}.lang
+%defattr(-,root,root,-)
+%doc README COPYING AUTHORS ChangeLog NEWS
+%{_bindir}/%{name}
+%{_bindir}/remote-viewer
+%dir %{_datadir}/%{name}
+%dir %{_datadir}/%{name}/ui/
+%{_datadir}/%{name}/ui/virt-viewer.xml
+%{_datadir}/%{name}/ui/virt-viewer-auth.xml
+%{_datadir}/%{name}/ui/virt-viewer-about.xml
+%{_datadir}/icons/hicolor/*/apps/*
+%{_datadir}/applications/remote-viewer.desktop
+%{_datadir}/mime/packages/virt-viewer-mime.xml
+%ghost %{_libexecdir}/spice-xpi-client
+%{_libexecdir}/spice-xpi-client-remote-viewer
+%{_mandir}/man1/virt-viewer.1*
+%{_mandir}/man1/remote-viewer.1*
+
+%changelog
