@@ -110,7 +110,6 @@ remote_viewer_dispose (GObject *object)
 }
 #endif
 
-/*   删除左边的空格   */
 static char * l_trim(char * szOutput, const char *szInput)
 {
  assert(szInput != NULL);
@@ -122,7 +121,6 @@ static char * l_trim(char * szOutput, const char *szInput)
  return strcpy(szOutput, szInput);
 }
 
-/*   删除右边的空格   */
 static char *r_trim(char *szOutput, const char *szInput)
 {
  char *p = NULL;
@@ -137,7 +135,6 @@ static char *r_trim(char *szOutput, const char *szInput)
  return szOutput;
 }
 
-/*   删除两边的空格   */
 static char * a_trim(char * szOutput, const char * szInput)
 {
  char *p = NULL;
@@ -294,8 +291,7 @@ sendreq(const char *href, const char *token,
 //join two string
 static char* join_str(const char *str1, const char *str2)
 {
-	char *result = malloc(strlen(str1)+strlen(str2)+1);//+1 for the zero-terminator
-	//in real code you would check for errors in malloc here
+	char *result = malloc(strlen(str1)+strlen(str2)+1);
 	if (result == NULL) exit (1);
 
 	strcpy(result, str1);
@@ -1172,7 +1168,7 @@ connect_dialog(gchar **uri)
 		area = gtk_dialog_get_content_area(GTK_DIALOG(dialog));
 
 		vbox=gtk_vbox_new(FALSE,0);
-		image=gtk_image_new_from_file("four.jpg");
+		image=gtk_image_new_from_file("back.jpg");
 		gtk_box_pack_start(GTK_BOX(vbox),image,FALSE,FALSE,0);
 		gtk_container_add(GTK_CONTAINER(area),vbox);
 
@@ -1187,7 +1183,7 @@ connect_dialog(gchar **uri)
 			gtk_box_pack_start(GTK_BOX(hbox),label,FALSE,FALSE,5);
 			instance = gtk_entry_new();
 			gtk_box_pack_start(GTK_BOX(hbox),instance,FALSE,FALSE,0);
-			//用户名
+			//user name
 			hbox = gtk_hbox_new(FALSE,0);
 			gtk_box_pack_start(GTK_BOX(area),hbox,FALSE,FALSE,5);
 			label=gtk_label_new("userName");
@@ -1197,7 +1193,7 @@ connect_dialog(gchar **uri)
 			gtk_box_pack_start(GTK_BOX(hbox),label,FALSE,FALSE,5);
 			user=gtk_entry_new();
 			gtk_box_pack_start(GTK_BOX(hbox),user,FALSE,FALSE,0);
-			//密码
+			//password
 			hbox = gtk_hbox_new(FALSE,0);
 			gtk_box_pack_start(GTK_BOX(area),hbox,FALSE,FALSE,5);
 			label=gtk_label_new("password");
@@ -1206,9 +1202,9 @@ connect_dialog(gchar **uri)
 
 		gtk_box_pack_start(GTK_BOX(hbox),label,FALSE,FALSE,5);
 		passwd=gtk_entry_new();
-		gtk_entry_set_visibility(GTK_ENTRY(passwd),FALSE);         //设置输入密码时不会显示输入的字符
+		gtk_entry_set_visibility(GTK_ENTRY(passwd),FALSE);        
 		gtk_box_pack_start(GTK_BOX(hbox),passwd,FALSE,FALSE,5);
-		//分隔符
+		
 		hbox = gtk_hbox_new(FALSE,5);
 		gtk_box_pack_start(GTK_BOX(area),hbox,FALSE,FALSE,5);
 		sep=gtk_hseparator_new();
