@@ -1,45 +1,21 @@
-  Virt Viewer
-  ===========
+It's a spice client for openstack instance (spice supported), based on virt-verwer
 
-Virt Viewer provides a graphical viewer for the guest OS
-display. At this time is supports guest OS using the VNC
-or SPICE protocols. Further protocols may be supported in
-the future as user demand dicatates. The viewer can connect
-directly to both local and remotely hosted guest OS, optionally
-using SSL/TLS encryption.
+virt-viewer address https://github.com/SPICE/virt-viewer
 
-Virt Viewer can be built with either GTK2 or GTK3, with the
-default option currently being GTK2. The choice can be made
-with:
+There are just three files modified and two added.
 
-   ./configure --with-gtk=3.0  (or =2.0)
 
-Virt Viewer uses the GTK-VNC (>= 0.4.3) widget to provide a
-display of the VNC protocol, which is available from
+Modified files: 
 
-  http://gtk-vnc.sourceforge.net/
+remote-viewer.h  added some method declaration
 
-Virt Viewer uses the SPICE-GTK (>= 0.20) widget to provide a
-display of the SPICE protocol, which is available from:
+remote-viewer.c  implemented method added in remote-viewer.h and changed the native connect_dialog method
 
-  http://spice-space.org/page/Spice-Gtk
+Makefile   add "-lcurl -ljansson"
 
-Use of either SPICE-GTK or GTK-VNC can be disabled at time
-of configure, with --without-gtk-vnc or --without-spice-gtk
-respectively.
 
-Virt Viewer uses libvirt to lookup information about the
-guest OS display. This is available from
+Added files:
 
-  http://libvirt.org/
+openstack.ini configure controller node ip
 
-Further information about the Virt Viewer application can be
-found on the Virt Manager website:
-
-  http://virt-manager.org/
-
-Feedback should be directed to the mailing list at
-
-  http://virt-manager.org/mailinglist.html
-
--- End
+back.jpg  background picture in login dialog
