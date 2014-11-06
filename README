@@ -9,13 +9,15 @@ Modified files:
 
 remote-viewer.h  added some method declaration
 
-remote-viewer.c  implemented method added in remote-viewer.h and changed the native connect_dialog method
+remote-viewer.c  implemented method added in remote-viewer.h
 
-Makefile   add "-lcurl -ljansson"
+and changed the native connect_dialog method
+
+Makefile   added "-lcurl -ljansson"
 
 
 Added files:
 
-openstack.ini configure controller node ip
+openstack.ini for configuring controller node ip
 
 back.jpg  background picture in login dialog
